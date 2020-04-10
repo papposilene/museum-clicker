@@ -25,7 +25,7 @@
 
   app.filter('currency', ['$filter', function($filter) {
     return function(input) {
-      return '&euro; ' + $filter('niceNumber')(input);
+      return '€ ' + $filter('niceNumber')(input);
     };
   }]);
 
