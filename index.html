@@ -81,13 +81,13 @@
                   <img ng-show="c.state.level > 0" class="collection-icon media-object" ng-src="{{ c.image }}" width="32px" height="32px" alt="">
                   <img ng-hide="c.state.level > 0" class="collection-icon media-object" src="assets/icons/png/unknown.png" alt="">
                   <div class="media-body">
-                    <h4 class="media-heading">{{ c.state.level > 0 ? c.name : '?????' }} <span ng-show="r.state.level > 0" class="badge">Level {{ c.state.level }}</span></h4>
+                    <h4 class="media-heading">{{ c.state.level > 0 ? c.name : '?????' }} <span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span></h4>
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
-                    <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ r.state.reputation | niceNumber }}</strong> reputation.</p>
+                    <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
-                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fa fa-cogs"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
-                    <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="fa {{ c.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
-                  </div>
+                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-university"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
+                      <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="fas {{ c.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -109,7 +109,7 @@
             </canvas>
           </div>
         </div>
-        <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fa fa-info"></i></button>
+        <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fas fa-info"></i></button>
         <div class="row status" ng-cloak>
           <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Artworks</strong><br>
@@ -144,7 +144,7 @@
                     <h4 class="media-heading">{{ w.name }} <span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span></h4>
                     <p ng-show="w.state.hired > 0">{{ w.description }}</p>
                     <p ng-show="w.state.hired > 0" class="small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
-                    <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fa fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
+                    <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fas fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
@@ -166,10 +166,10 @@
                 <li class="media" ng-show="false"></li>
                 <li class="media" ng-repeat="u in uc.upgrades" ng-show="uc.isVisible(u)">
                   <div class="media-body">
-                    <h4 class="media-heading"><i class="fa {{ u.icon }} media-object"></i> {{ u.name }}</h4>
+                    <h4 class="media-heading"><i class="fas {{ u.icon }} media-object"></i> {{ u.name }}</h4>
                     <p>{{ u.description }}</p>
                     <p class="small">{{ u.effect }}</p>
-                    <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="fa fa-money"></i> <small>{{ u.cost | currency }}</small></button>
+                    <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="far fa-money-bill-alt"></i> <small>{{ u.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
@@ -180,9 +180,9 @@
 
       <div id="column-tabs" class="col-xs-6 visible-xs-block visible-sm-block col-no-padding">
         <ul id="TabList" class="nav nav-tabs" role="tablist">
-          <li class="active"><a href="#collection" role="tab" data-toggle="tab"><i class="fa fa-cogs"></i> Collection</a></li>
-          <li><a href="#hr" role="tab" data-toggle="tab"><i class="fa fa-users"></i> Curatorial Staff</a></li>
-          <li><a href="#upgrades" role="tab" data-toggle="tab"><i class="fa fa-wrench"></i> Upgrades</a></li>
+          <li class="active"><a href="#collection" role="tab" data-toggle="tab"><i class="fas fa-university"></i> Collections</a></li>
+          <li><a href="#hr" role="tab" data-toggle="tab"><i class="fas fa-users"></i> Curatorial Staff</a></li>
+          <li><a href="#upgrades" role="tab" data-toggle="tab"><i class="fas fa-wrench"></i> Upgrades</a></li>
         </ul>
         <div id="TabContent" class="tab-content">
           <div class="tab-pane active scrollable" id="collection">
