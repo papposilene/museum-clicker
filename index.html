@@ -101,21 +101,21 @@
       <div id="column-museum" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="LabController as lc">
         <input class="hidden-xs" id="labname" value="{{ lc.museum.state.name }}" ng-model="lc.museum.state.name" ng-cloak>
         <hr class="hidden-xs">
-        <div id="tikcketoffice-holder">
-          <div id="tikcketoffice" ng-controller="DetectorController as dc">
-            <canvas id="tikcketoffice-core" width="400" height="400">
+        <div id="ticketoffice-holder">
+          <div id="ticketoffice" ng-controller="TikcketOffice as dc">
+            <canvas id="ticketoffice-core" width="400" height="400">
               Your ticket office. Click on it to generate visitors.
             </canvas>
-            <canvas ng-click="dc.click()" id="tikcketoffice-visitors" width="400" height="400" class="prevent-select">
+            <canvas ng-click="dc.click()" id="ticketoffice-visitors" width="400" height="400" class="prevent-select">
               Your ticket office. Click on it to generate visitors.
             </canvas>
           </div>
         </div>
-        <button id="tikcketoffice-info" class="btn btn-info" ng-click="lc.showTicketOfficeInfo()"><i class="fa fa-info"></i></button>
+        <button id="ticketoffice-info" class="btn btn-info" ng-click="lc.showTicketOfficeInfo()"><i class="fa fa-info"></i></button>
         <div class="row status" ng-cloak>
           <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Artworks</strong><br>
-            {{ lc.museum.state.artworks | niceNumber }}
+            {{ lc.museum.state.artwork | niceNumber }}
             <div class="update-value" id="update-data"></div>
           </div>
           <div class="col-xs-4 text-center col-no-padding-xs">
