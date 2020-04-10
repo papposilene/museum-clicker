@@ -18,7 +18,7 @@ var UI = (function () {
       }
       $('.scrollable').height(h - offset + 'px');
 
-      var types = ['research', 'hr', 'upgrades'];
+      var types = ['collection', 'hr', 'upgrades'];
 
       if ($(window).width() < 992) {
         for (var i = 0; i < types.length; i++) {
@@ -36,33 +36,33 @@ var UI = (function () {
 
       if ($(window).width() < 600) {
         var newWidth = Math.max($(window).width() - ($(window).height() - 90 + 10), 300);
-        $('#column-lab').width($(window).width() - newWidth);
+        $('#column-museum').width($(window).width() - newWidth);
         $('#column-tabs').width(newWidth);
       } else {
-        $('#column-lab').removeAttr('style');
+        $('#column-museum').removeAttr('style');
         $('#column-tabs').removeAttr('style');
       }
 
       if ($(window).width() >= 1200) {
-        if (detector.width != 500) {
-          $('#detector').width(500).height(500);
-          detector.init(500);
+        if (ticket.width != 500) {
+          $('#ticket').width(500).height(500);
+          ticket.init(500);
         }
       } else if ($(window).width() < 768 && $(window).height() - 90 < 300) {
         var newWidth = $(window).width() - Math.max($(window).width() - ($(window).height() - 90 + 10), 300) - 10;
-        if (detector.width != newWidth) {
-          $('#detector').width(newWidth).height(newWidth);
-          detector.init(newWidth);
+        if (ticket.width != newWidth) {
+          $('#ticket').width(newWidth).height(newWidth);
+          ticket.init(newWidth);
         }
       } else if ($(window).width() < 992) {
-        if (detector.width != 300) {
-          $('#detector').width(300).height(300);
-          detector.init(300);
+        if (ticket.width != 300) {
+          $('#ticket').width(300).height(300);
+          ticket.init(300);
         }
       } else {
-        if (detector.width != 400) {
-          $('#detector').width(400).height(400);
-          detector.init(400);
+        if (ticket.width != 400) {
+          $('#ticket').width(400).height(400);
+          ticket.init(400);
         }
       }
     }
@@ -208,8 +208,8 @@ var UI = (function () {
 
         evt = evt || window.event;
         if (evt.type in evtMap)
-            detector.visible = evtMap[evt.type] == 'visible';
+            ticket.visible = evtMap[evt.type] == 'visible';
         else        
-            detector.visible = !this[hidden];
+            ticket.visible = !this[hidden];
     }
 })();
