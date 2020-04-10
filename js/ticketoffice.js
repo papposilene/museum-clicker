@@ -269,7 +269,7 @@ var ticket =
 
         for (var i = 0; i < num; i++) {
             var index = Math.round(Math.random() * (ticket.tracks.length - 1));
-            var event = new ParticleEvent(ticket.tracks[index], num);
+            var event = new MuseumEvent(ticket.tracks[index], num);
             ticket.events.list.push(event);
         }
     },
@@ -284,7 +284,7 @@ var ticket =
 
         for (var i = 0; i < num; i++) {
             var index = Math.round(Math.random() * (ticket.tracks.length - 1));
-            var event = new ParticleEvent(ticket.tracks[index], num, true);
+            var event = new MuseumEvent(ticket.tracks[index], num, true);
             ticket.events.list.push(event);
         }
     },
