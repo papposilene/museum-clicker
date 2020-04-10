@@ -35,9 +35,9 @@ var Game = (function() {
       return o;
     };
     this.collection = this.collection.map(
-        function(r) { return makeGameObject(GameObjects.Research, r); });
+        function(r) { return makeGameObject(GameObjects.Collection, r); });
     this.curators = this.curators.map(
-        function(w) { return makeGameObject(GameObjects.Worker, w); });
+        function(w) { return makeGameObject(GameObjects.Curator, w); });
     this.upgrades = this.upgrades.map(
         function(u) { return makeGameObject(GameObjects.Upgrade, u); });
     this.achievements = this.achievements.map(
