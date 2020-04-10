@@ -92,7 +92,7 @@ var ticket =
         ticket.core.ctx = ticket.core.canvas.getContext('2d');
         //ticket.core.ctx = new C2S(400,400);
 
-        ticket.events.canvas = document.getElementById('ticket-events');
+        ticket.events.canvas = document.getElementById('ticket-visitors');
         ticket.events.ctx = ticket.events.canvas.getContext('2d');
 
         var devicePixelRatio = window.devicePixelRatio || 1;
