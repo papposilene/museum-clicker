@@ -2,12 +2,12 @@ var Game = (function() {
   'use strict';
 
   var Game = function() {
-    this.lab = new GameObjects.Lab();
-    this.research = null;
+    this.museum = new GameObjects.Museum();
+    this.collection = null;
     this.workers = null;
     this.upgrades = null;
     this.achievements = null;
-    this.allObjects = {lab : this.lab};
+    this.allObjects = {museum : this.museum};
     this.loaded = false;
   };
 
@@ -20,7 +20,7 @@ var Game = (function() {
     // However, I don't see any other reasonable way to do this in order to
     // make it work with Angular. If you know a way, let me know, and I'll
     // give you a beer. - Kevin
-    this.research = Helpers.loadFile('json/research.json');
+    this.collection = Helpers.loadFile('json/collection.json');
     this.workers = Helpers.loadFile('json/workers.json');
     this.upgrades = Helpers.loadFile('json/upgrades.json');
     this.achievements = Helpers.loadFile('json/achievements.json');
@@ -34,7 +34,7 @@ var Game = (function() {
       _this.allObjects[o.key] = o;
       return o;
     };
-    this.research = this.research.map(
+    this.collection = this.collection.map(
         function(r) { return makeGameObject(GameObjects.Research, r); });
     this.workers = this.workers.map(
         function(w) { return makeGameObject(GameObjects.Worker, w); });
