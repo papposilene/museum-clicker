@@ -16,13 +16,13 @@ var GameObjects = (function() {
   GameObject.prototype.loadState =
       function(state) { $.extend(this.state, state); };
 
-  /** @class Lab
+  /** @class Museum
    */
-  var Lab = function() {
+  var Museum = function() {
     GameObject.apply(this, [{
-                             key : 'lab',
+                             key : 'museum',
                              state : {
-                               name : 'Give your lab an awesome name!',
+                               name : 'Give your museum an awesome name!',
                                detector : 1,
                                factor : 5,
                                data : 0,
@@ -38,28 +38,28 @@ var GameObjects = (function() {
                            }]);
   };
 
-  Lab.prototype = Object.create(GameObject.prototype);
+  Museum.prototype = Object.create(GameObject.prototype);
 
-  Lab.prototype.constructor = Lab;
+  Museum.prototype.constructor = Museum;
 
-  Lab.prototype.getGrant = function() {
+  Museum.prototype.getGrant = function() {
     var addition = this.state.reputation * this.state.factor;
     this.state.money += addition;
     this.state.moneyCollected += addition;
     return addition;
   };
 
-  Lab.prototype.acquireData = function(amount) {
+  Museum.prototype.acquireData = function(amount) {
     this.state.data += amount;
     this.state.dataCollected += amount;
   };
 
-  Lab.prototype.clickDetector = function() {
+  Museum.prototype.clickDetector = function() {
     this.state.clicks += 1;
     this.acquireData(this.state.detector);
   };
 
-  Lab.prototype.research = function(cost, reputation) {
+  Museum.prototype.research = function(cost, reputation) {
     if (this.state.data >= cost) {
       this.state.data -= cost;
       this.state.dataSpent += cost;
@@ -69,7 +69,7 @@ var GameObjects = (function() {
     return false;
   };
 
-  Lab.prototype.buy = function(cost) {
+  Museum.prototype.buy = function(cost) {
     if (this.state.money >= cost) {
       this.state.money -= cost;
       this.state.moneySpent += cost;
@@ -90,23 +90,23 @@ var GameObjects = (function() {
 
   Research.prototype.constructor = Research;
 
-  Research.prototype.isVisible = function(lab) {
-    if (!lab) {
+  Research.prototype.isVisible = function(museum) {
+    if (!museum) {
       return false;
     }
     return this.state.level > 0 ||
-           lab.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           museum.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Research.prototype.isAvailable = function(lab) {
-    if (!lab) {
+  Research.prototype.isAvaimuseumle = function(museum) {
+    if (!museum) {
       return false;
     }
-    return lab.state.data >= this.state.cost;
+    return museum.state.data >= this.state.cost;
   };
 
-  Research.prototype.research = function(lab) {
-    if (lab && lab.research(this.state.cost, this.state.reputation)) {
+  Research.prototype.research = function(museum) {
+    if (museum && museum.research(this.state.cost, this.state.reputation)) {
       this.state.level++;
       if (this.state.info_levels.length > 0 &&
           this.state.level === this.state.info_levels[0]) {
@@ -140,23 +140,23 @@ var GameObjects = (function() {
 
   Worker.prototype.constructor = Worker;
 
-  Worker.prototype.isVisible = function(lab) {
-    if (!lab) {
+  Worker.prototype.isVisible = function(museum) {
+    if (!museum) {
       return false;
     }
     return this.state.hired > 0 ||
-           lab.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           museum.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Worker.prototype.isAvailable = function(lab) {
-    if (!lab) {
+  Worker.prototype.isAvaimuseumle = function(museum) {
+    if (!museum) {
       return false;
     }
-    return lab.state.money >= this.state.cost;
+    return museum.state.money >= this.state.cost;
   };
 
-  Worker.prototype.hire = function(lab) {
-    if (lab && lab.buy(this.state.cost)) {
+  Worker.prototype.hire = function(museum) {
+    if (museum && museum.buy(this.state.cost)) {
       this.state.hired++;
       var cost = this.state.cost;
       this.state.cost = Math.floor(cost * this.cost_increase);
@@ -193,21 +193,21 @@ var GameObjects = (function() {
     return true;
   };
 
-  Upgrade.prototype.isAvailable = function(lab, allObjects) {
-    if (!lab || !allObjects) {
+  Upgrade.prototype.isAvaimuseumle = function(museum, allObjects) {
+    if (!museum || !allObjects) {
       return false;
     }
-    return !this.state.used && lab.state.money >= this.cost &&
+    return !this.state.used && museum.state.money >= this.cost &&
            this.meetsRequirements(allObjects);
   };
 
-  Upgrade.prototype.isVisible = function(lab, allObjects) {
-    if (!lab || !allObjects) {
+  Upgrade.prototype.isVisible = function(museum, allObjects) {
+    if (!museum || !allObjects) {
       return false;
     }
     if (!this.state.used &&
         (this.state.visible ||
-         lab.state.money >= this.cost * GLOBAL_VISIBILITY_THRESHOLD &&
+         museum.state.money >= this.cost * GLOBAL_VISIBILITY_THRESHOLD &&
              this.meetsRequirements(allObjects))) {
       this._visible = true;
       return true;
@@ -215,8 +215,8 @@ var GameObjects = (function() {
     return false;
   };
 
-  Upgrade.prototype.buy = function(lab, allObjects) {
-    if (lab && allObjects && !this.state.used && lab.buy(this.cost)) {
+  Upgrade.prototype.buy = function(museum, allObjects) {
+    if (museum && allObjects && !this.state.used && museum.buy(this.cost)) {
       for (var i = 0; i < this.targets.length; i++) {
         var t = this.targets[i];
         allObjects[t.key].state[t.property] *= this.factor || 1;
@@ -239,14 +239,14 @@ var GameObjects = (function() {
 
   Achievement.prototype = Object.create(GameObject.prototype);
 
-  Achievement.prototype.validate = function(lab, allObjects, saveTime) {
+  Achievement.prototype.validate = function(museum, allObjects, saveTime) {
     if (this.state.timeAchieved) {
       return true;
     }
     if (allObjects.hasOwnProperty(this.targetKey) &&
         allObjects[this.targetKey].state.hasOwnProperty(this.targetProperty) &&
         allObjects[this.targetKey].state[this.targetProperty] >= this.threshold) {
-      this.state.timeAchieved = lab.state.time + new Date().getTime() - saveTime;
+      this.state.timeAchieved = museum.state.time + new Date().getTime() - saveTime;
       UI.showAchievement(this);
       return true;
     }
@@ -264,7 +264,7 @@ var GameObjects = (function() {
 
   // Expose classes in module.
   return {
-    Lab: Lab,
+    Museum: Museum,
     Research: Research,
     Worker: Worker,
     Upgrade: Upgrade,
