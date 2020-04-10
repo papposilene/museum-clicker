@@ -58,8 +58,8 @@
       UI.showModal('Ticket', this._detectorInfo);
     };
     $interval(function() {  // one tick
-      var grant = museum.getGrant();
-      UI.showUpdateValue("#update-cashflow", grant);
+      var cashflow = museum.getMoney();
+      UI.showUpdateValue("#update-cashflow", cashflow);
       var sum = 0;
       for (var i = 0; i < workers.length; i++) {
         sum += workers[i].state.hired * workers[i].state.rate;
