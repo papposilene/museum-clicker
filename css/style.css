@@ -24,27 +24,27 @@ h1 br {
   background-image: url('../assets/pc32.png');
 }
 
-#detector {
+#ticketoffice {
   cursor: pointer;
   margin: 0 auto;
   position: relative;
 }
 
-#detector canvas {
+#ticketoffice canvas {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-#detector-core {
+#ticketoffice-core {
    z-index: 0;
 }
 
-#detector-events {
+#ticketoffice-events {
    z-index: 1;
 }
 
-#detector-info {
+#ticketoffice-info {
   z-index: 10;
   position: absolute;
 }
@@ -130,7 +130,7 @@ h1 br {
   position: absolute;
 }
 
-#labname {
+#museumname {
   border: 0px;
   padding: 0 4px;
   margin-top: 20px;
@@ -207,7 +207,7 @@ h1 br {
 }
 
 @media screen and (min-width: 768px) {
-  #detector-holder {
+  #ticketoffice-holder {
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -216,11 +216,11 @@ h1 br {
     font-size: 18px;
   }
 
-  #labname {
+  #museumname {
     font-size: 22px;
   }
 
-  #detector-info {
+  #ticketoffice-info {
     top: 85px; right: 15px;
   }
 }
@@ -236,7 +236,7 @@ h1 br {
     font-size: 20px;
   }
 
-  #labname {
+  #museumname {
     font-size: 24px;
   }
 }
@@ -276,7 +276,7 @@ h1 br {
     min-width: 75px;
   }
 
-  #detector-info {
+  #ticketoffice-info {
     top: 15px; right: 15px;
   }
 }
