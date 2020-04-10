@@ -4,7 +4,7 @@ var Game = (function() {
   var Game = function() {
     this.museum = new GameObjects.Museum();
     this.collection = null;
-    this.workers = null;
+    this.curators = null;
     this.upgrades = null;
     this.achievements = null;
     this.allObjects = {museum : this.museum};
@@ -21,7 +21,7 @@ var Game = (function() {
     // make it work with Angular. If you know a way, let me know, and I'll
     // give you a beer. - Kevin
     this.collection = Helpers.loadFile('json/collection.json');
-    this.workers = Helpers.loadFile('json/workers.json');
+    this.curators = Helpers.loadFile('json/curators.json');
     this.upgrades = Helpers.loadFile('json/upgrades.json');
     this.achievements = Helpers.loadFile('json/achievements.json');
 
@@ -36,7 +36,7 @@ var Game = (function() {
     };
     this.collection = this.collection.map(
         function(r) { return makeGameObject(GameObjects.Research, r); });
-    this.workers = this.workers.map(
+    this.curators = this.curators.map(
         function(w) { return makeGameObject(GameObjects.Worker, w); });
     this.upgrades = this.upgrades.map(
         function(u) { return makeGameObject(GameObjects.Upgrade, u); });
