@@ -99,10 +99,10 @@
       </div>
 
       <div id="column-museum" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="LabController as lc">
-        <input class="hidden-xs" id="labname" value="{{ lc.museum.state.name }}" ng-model="lc.museum.state.name" ng-cloak>
+        <input class="hidden-xs" id="museumname" value="{{ lc.museum.state.name }}" ng-model="lc.museum.state.name" ng-cloak>
         <hr class="hidden-xs">
         <div id="ticketoffice-holder">
-          <div id="ticketoffice" ng-controller="TikcketOffice as dc">
+          <div id="ticketoffice" ng-controller="TicketOffice as dc">
             <canvas id="ticketoffice-core" width="400" height="400">
               Your ticket office. Click on it to generate visitors.
             </canvas>
