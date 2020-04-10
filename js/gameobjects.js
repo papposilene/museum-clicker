@@ -20,7 +20,7 @@ var GameObjects = (function() {
    */
   var Museum = function() {
     GameObject.apply(this, [{
-                             key : 'lab',
+                             key : 'museum',
                              state : {
                                name : 'Give your museum an awesome name!',
                                ticket : 1,
@@ -239,14 +239,14 @@ var GameObjects = (function() {
 
   Achievement.prototype = Object.create(GameObject.prototype);
 
-  Achievement.prototype.validate = function(lab, allObjects, saveTime) {
+  Achievement.prototype.validate = function(museum, allObjects, saveTime) {
     if (this.state.timeAchieved) {
       return true;
     }
     if (allObjects.hasOwnProperty(this.targetKey) &&
         allObjects[this.targetKey].state.hasOwnProperty(this.targetProperty) &&
         allObjects[this.targetKey].state[this.targetProperty] >= this.threshold) {
-      this.state.timeAchieved = lab.state.time + new Date().getTime() - saveTime;
+      this.state.timeAchieved = museum.state.time + new Date().getTime() - saveTime;
       UI.showAchievement(this);
       return true;
     }
