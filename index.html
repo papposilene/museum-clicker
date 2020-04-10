@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="particleClicker">
   <head>
-    <title>Museum Clicker</title>
+    <title>Particle Clicker</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Museum Clicker">
+    <meta property="og:title" content="Particle Clicker">
     <meta property="og:type" content="game">
     <meta property="og:description" content="An addictive incremental game that was made during the 2020 Covid-19 Lockdown, forked from the CERN Webfest 2014. It takes the player on a historic journey through museum's collections.">
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/8345868">
@@ -59,7 +59,6 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i> Social<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://facebook.com/papposilene"><i class="fa fa-facebook-square"></i> Facebook</a></li>
                 <li><a href="https://twitter.com/papposilene"><i class="fa fa-twitter"></i> Twitter</a></li>
               </ul>
             </li>
@@ -73,22 +72,22 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <i class="fa fa-cogs"></i> Research
+              <i class="fa fa-cogs"></i> Collection
             </h4>
           </div>
-          <div class="panel-body scrollable large" id="researchLarge" ng-controller="ResearchController as rc">
-            <div id="researchContent" ng-controller="ResearchController as rc">
+          <div class="panel-body scrollable large" id="collectionLarge" ng-controller="CollectionController as cc">
+            <div id="collectionContent" ng-controller="CollectionController as cc">
               <ul class="media-list" ng-cloak>
-                <li class="media" ng-repeat="r in rc.collection" ng-show="rc.isVisible(r)">
-                  <img ng-show="r.state.level > 0" class="collection-icon media-object" ng-src="{{ r.image }}" alt="">
-                  <img ng-hide="r.state.level > 0" class="collection-icon media-object" src="assets/icons/png/unknown.png" alt="">
+                <li class="media" ng-repeat="c in cc.collection" ng-show="cc.isVisible(c)">
+                  <img ng-show="c.state.level > 0" class="collection-icon media-object" ng-src="{{ c.image }}" alt="">
+                  <img ng-hide="c.state.level > 0" class="collection-icon media-object" src="assets/icons/png/unknown.png" alt="">
                   <div class="media-body">
-                    <h4 class="media-heading">{{ r.state.level > 0 ? r.name : '?????' }} <span ng-show="r.state.level > 0" class="badge">Level {{ r.state.level }}</span></h4>
-                    <p ng-show="r.state.level > 0">{{ r.description }}</p>
-                    <p ng-show="r.state.level > 0" class="small">Research yields <strong>{{ r.state.reputation | niceNumber }}</strong> reputation.</p>
+                    <h4 class="media-heading">{{ c.state.level > 0 ? c.name : '?????' }} <span ng-show="r.state.level > 0" class="badge">Level {{ c.state.level }}</span></h4>
+                    <p ng-show="c.state.level > 0">{{ c.description }}</p>
+                    <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ r.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
-                      <button class="btn btn-primary" ng-disabled="!rc.isAvailable(r)" ng-click="rc.doResearch(r)"><i class="fa fa-cogs"></i> <small>{{ r.state.cost | niceNumber }} data</small></button>
-                    <button class="btn btn-info {{ r.state.interesting ? 'blink' : '' }}" ng-show="r.state.level > 0" ng-click="rc.showInfo(r)"><i class="fa {{ r.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
+                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fa fa-cogs"></i> <small>{{ c.state.cost | niceNumber }} data</small></button>
+                    <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="fa {{ c.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
                   </div>
                   </div>
                 </li>
@@ -98,34 +97,34 @@
         </div>
       </div>
 
-      <div id="column-museum" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="LabController as lc">
-        <input class="hidden-xs" id="museumname" value="{{ lc.museum.state.name }}" ng-model="lc.museum.state.name" ng-cloak>
+      <div id="column-museum" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="MuseumController as mc">
+        <input class="hidden-xs" id="museumname" value="{{ mc.museum.state.name }}" ng-model="mc.museum.state.name" ng-cloak>
         <hr class="hidden-xs">
-        <div id="ticketoffice-holder">
-          <div id="ticketoffice" ng-controller="TicketOffice as dc">
-            <canvas id="ticketoffice-core" width="400" height="400">
+        <div id="ticket-holder">
+          <div id="ticket" ng-controller="TicketController as dc">
+            <canvas id="ticket-core" width="400" height="400">
               Your ticket office. Click on it to generate visitors.
             </canvas>
-            <canvas ng-click="dc.click()" id="ticketoffice-visitors" width="400" height="400" class="prevent-select">
+            <canvas ng-click="dc.click()" id="ticket-visitors" width="400" height="400" class="prevent-select">
               Your ticket office. Click on it to generate visitors.
             </canvas>
           </div>
         </div>
-        <button id="ticketoffice-info" class="btn btn-info" ng-click="lc.showTicketOfficeInfo()"><i class="fa fa-info"></i></button>
+        <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fa fa-info"></i></button>
         <div class="row status" ng-cloak>
           <div class="col-xs-4 text-center col-no-padding-xs">
-            <strong>Artworks</strong><br>
-            {{ lc.museum.state.artwork | niceNumber }}
+            <strong>Data</strong><br>
+            {{ mc.museum.state.data | niceNumber }}
             <div class="update-value" id="update-data"></div>
           </div>
           <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Reputation</strong><br>
-            {{ lc.museum.state.reputation | niceNumber }}
+            {{ mc.museum.state.reputation | niceNumber }}
             <div class="update-value" id="update-reputation"></div>
           </div>
           <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Funding</strong><br>
-            {{ lc.museum.state.money | currency }}
+            {{ mc.museum.state.money | currency }}
             <div class="update-value" id="update-funding"></div>
           </div>
         </div>
@@ -135,7 +134,7 @@
         <div class="panel panel-default panel-stick">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <i class="fa fa-users"></i> HR
+              <i class="fa fa-users"></i> Curatorial Staff
             </h4>
           </div>
           <div class="panel-body scrollable large" id="hrLarge">
@@ -145,7 +144,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">{{ w.name }} <span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span></h4>
                     <p ng-show="w.state.hired > 0">{{ w.description }}</p>
-                    <p ng-show="w.state.hired > 0" class="small">Produce <strong>{{ w.state.rate | niceNumber }}</strong> data per second.</p>
+                    <p ng-show="w.state.hired > 0" class="small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
                     <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fa fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
                 </li>
@@ -182,8 +181,8 @@
 
       <div id="column-tabs" class="col-xs-6 visible-xs-block visible-sm-block col-no-padding">
         <ul id="TabList" class="nav nav-tabs" role="tablist">
-          <li class="active"><a href="#collection" role="tab" data-toggle="tab"><i class="fa fa-cogs"></i> Collections</a></li>
-          <li><a href="#hr" role="tab" data-toggle="tab"><i class="fa fa-users"></i> HR</a></li>
+          <li class="active"><a href="#collection" role="tab" data-toggle="tab"><i class="fa fa-cogs"></i> Collection</a></li>
+          <li><a href="#hr" role="tab" data-toggle="tab"><i class="fa fa-users"></i> Curatorial Staff</a></li>
           <li><a href="#upgrades" role="tab" data-toggle="tab"><i class="fa fa-wrench"></i> Upgrades</a></li>
         </ul>
         <div id="TabContent" class="tab-content">
@@ -256,7 +255,7 @@
 
     <div id="mobile-orientation-container">
       <div id="mobile-orientation-message">
-        You can only play Museum Clicker on your mobile device in landscape orientation.
+        You can only play Particle Clicker on your mobile device in landscape orientation.
       </div>
     </div>
 
@@ -265,13 +264,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Museum Clicker</h4>
+            <h4 class="modal-title" id="myModalLabel">Particle Clicker</h4>
           </div>
           <div class="modal-body">
             <h4>About</h4>
             <p class="small">Version: 0.9</p>
             <p class="small bg-warning">This is a pre-release. If you encounter any bugs please report them using <a href="https://github.com/particle-clicker/particle-clicker/issues"><i class="fa fa-github"></i> GitHub issues</a>. This game runs best in landscape mode. Performance of the event display may rely heavily on your hardware.</p>
-            <p>Museum Clicker is a game that was made during the <a href="https://webfest.web.cern.ch">CERN Webfest 2014</a>. The idea is borrowed from <a href="http://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>, an amazing and addictive cookie-themed game.</p>
+            <p>Particle Clicker is a game that was made during the <a href="https://webfest.web.cern.ch">CERN Webfest 2014</a>. The idea is borrowed from <a href="http://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>, an amazing and addictive cookie-themed game.</p>
             <h5>Libraries</h5>
             <p>This game is realised using a few libraries. Those are</p>
             <ul>
