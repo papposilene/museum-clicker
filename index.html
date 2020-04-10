@@ -27,32 +27,30 @@
     </script>
     <!-- End Google Analytics -->
   </head>
-  <body>  
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand pc-icon" href="#" data-toggle="modal" data-target="#myModal"> Museum Clicker</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a></li>
-            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a></li>
-            <li class="nav-item dropdown" ng-controller="SaveController">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-save"></i> Saved: <span ng-cloak>{{ lastSaved | date : 'H:mm' }}</span> <span class="caret"></span></a>
-              <div class="dropdown-menu">
-                <li class="dropdown-item"><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-item"><a href="#" ng-click="restart()"><i class="fas fa-sync"></i> Restart</a></li>
-              </div>
-            </li>
+  <body>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+	  <a class="navbar-brand" href="#" data-toggle="modal" data-target="#myModal"> Museum Clicker</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a href="#" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a>
+			</li>
+			<li class="nav-item">
+			  <a href="#" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a>
+			</li>
+			<li class="nav-item dropdown" ng-controller="SaveController">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-save"></i> Saved: <span ng-cloak>{{ lastSaved | date : 'H:mm' }}</span> <span class="caret"></span></a>
+                <div class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-item"><a href="#" ng-click="restart()"><i class="fas fa-sync"></i> Restart</a></li>
+                </div>
+              </li>
             <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i> About</a></li>
-          </ul>
+		  </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://github.com/papposilene/museum-clicker/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
             <li class="nav-item dropdown">
@@ -63,8 +61,7 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+	  </nav>
 
     <div id="main-content" class="container-fluid col-no-padding">
       <div class="col-md-3 col-md-3s col-lg-2 col-no-padding visible-md-block visible-lg-block">
