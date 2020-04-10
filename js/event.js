@@ -12,17 +12,17 @@ function MuseumEvent(type, count, external)
     switch (this.type.name)
     {
         case 'electron':
-            this.length = ticketoffice.radius.siliconSpace * ticketoffice.ratio + Math.round((ticketoffice.radius.ecal * ticketoffice.ratio + 10 - ticketoffice.radius.siliconSpace * ticketoffice.ratio) * Math.random());
+            this.length = ticket.radius.siliconSpace * ticket.ratio + Math.round((ticket.radius.ecal * ticket.ratio + 10 - ticket.radius.siliconSpace * ticket.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 20 + Math.round((100 - 20) * Math.random());
             break;
         case 'jet':
-            this.length = ticketoffice.radius.ecal * ticketoffice.ratio + Math.round((ticketoffice.radius.mucal * ticketoffice.ratio - ticketoffice.radius.ecal * ticketoffice.ratio) * Math.random());
+            this.length = ticket.radius.ecal * ticket.ratio + Math.round((ticket.radius.mucal * ticket.ratio - ticket.radius.ecal * ticket.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 40 + Math.round((200 - 40) * Math.random());
             break;
         case 'muon':
-            this.length = ticketoffice.radius.mucal * ticketoffice.ratio + 3 * ticketoffice.radius.mucalDark * ticketoffice.ratio + Math.round((4 * ticketoffice.radius.mucalLight * ticketoffice.ratio + 2 * ticketoffice.radius.mucalDark * ticketoffice.ratio) * Math.random());
+            this.length = ticket.radius.mucal * ticket.ratio + 3 * ticket.radius.mucalDark * ticket.ratio + Math.round((4 * ticket.radius.mucalLight * ticket.ratio + 2 * ticket.radius.mucalDark * ticket.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 200 + Math.round((600 - 200) * Math.random());
             break;
@@ -35,9 +35,9 @@ MuseumEvent.prototype.draw = function(duration, init)
 {
     init = typeof init !== 'undefined' ? init : false;
 
-    var ctx = ticketoffice.events.ctx;
-    var cx = ticketoffice.width / 2;
-    var cy = ticketoffice.height / 2;
+    var ctx = ticket.events.ctx;
+    var cx = ticket.width / 2;
+    var cy = ticket.height / 2;
 
     ctx.save();
 
