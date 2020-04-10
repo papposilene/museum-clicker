@@ -12,11 +12,11 @@ var analytics =
 
     events:
     {
-        categoryResearch: 'Research',
+        categoryCollection: 'Collection',
         categoryHR: 'HR',
         categoryUpgrades: 'Upgrades',
         
-        actionResearch: 'Research',
+        actionCollection: 'Collection',
         actionHire: 'Hire',
         actionBuy: 'Buy'
     },
@@ -29,7 +29,7 @@ var analytics =
         }
         
         ga('create', Helpers.analytics);
-        ga('set', { 'appName': 'Particle Clicker', 'appId': 'ch.cern.particle-clicker', 'appVersion': '0.9' });
+        ga('set', { 'appName': 'Museum Clicker', 'appId': 'nl.psln.museum-clicker', 'appVersion': '0.9' });
         ga('set', 'anonymizeIp', true);
 
 
