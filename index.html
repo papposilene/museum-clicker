@@ -79,7 +79,7 @@
             <div id="collectionContent" ng-controller="CollectionController as cc">
               <ul class="media-list" ng-cloak>
                 <li class="media" ng-repeat="c in cc.collection" ng-show="cc.isVisible(c)">
-                  <img ng-show="c.state.level > 0" class="collection-icon media-object" ng-src="{{ c.image }}" alt="">
+                  <img ng-show="c.state.level > 0" class="collection-icon media-object" ng-src="{{ c.image }}" width="32px" height="32px" alt="">
                   <img ng-hide="c.state.level > 0" class="collection-icon media-object" src="assets/icons/png/unknown.png" alt="">
                   <div class="media-body">
                     <h4 class="media-heading">{{ c.state.level > 0 ? c.name : '?????' }} <span ng-show="r.state.level > 0" class="badge">Level {{ c.state.level }}</span></h4>
