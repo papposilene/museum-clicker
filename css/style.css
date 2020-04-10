@@ -24,27 +24,27 @@ h1 br {
   background-image: url('../assets/pc32.png');
 }
 
-#ticketoffice {
+#ticket {
   cursor: pointer;
   margin: 0 auto;
   position: relative;
 }
 
-#ticketoffice canvas {
+#ticket canvas {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-#ticketoffice-core {
+#ticket-core {
    z-index: 0;
 }
 
-#ticketoffice-events {
+#ticket-visitors {
    z-index: 1;
 }
 
-#ticketoffice-info {
+#ticket-info {
   z-index: 10;
   position: absolute;
 }
@@ -207,7 +207,7 @@ h1 br {
 }
 
 @media screen and (min-width: 768px) {
-  #ticketoffice-holder {
+  #ticket-holder {
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -220,7 +220,7 @@ h1 br {
     font-size: 22px;
   }
 
-  #ticketoffice-info {
+  #ticket-info {
     top: 85px; right: 15px;
   }
 }
@@ -276,7 +276,7 @@ h1 br {
     min-width: 75px;
   }
 
-  #ticketoffice-info {
+  #ticket-info {
     top: 15px; right: 15px;
   }
 }
