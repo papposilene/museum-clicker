@@ -23,16 +23,16 @@ var GameObjects = (function() {
                              key : 'museum',
                              state : {
                                name : 'Give your museum an awesome name!',
-                               detector : 1,
+                               ticketoffice : 1,
                                factor : 5,
-                               data : 0,
+                               artwork : 0,
                                money : 0,
                                reputation : 0,
                                clicks : 0,
                                moneyCollected : 0,
                                moneySpent : 0,
-                               dataCollected : 0,
-                               dataSpent : 0,
+                               artworkCollected : 0,
+                               artworkSpent : 0,
                                time: 0
                              }
                            }]);
@@ -50,18 +50,18 @@ var GameObjects = (function() {
   };
 
   Museum.prototype.acquireData = function(amount) {
-    this.state.data += amount;
-    this.state.dataCollected += amount;
+    this.state.artwork += amount;
+    this.state.artworkCollected += amount;
   };
 
   Museum.prototype.clickDetector = function() {
     this.state.clicks += 1;
-    this.acquireData(this.state.detector);
+    this.acquireData(this.state.ticketoffice);
   };
 
   Museum.prototype.research = function(cost, reputation) {
-    if (this.state.data >= cost) {
-      this.state.data -= cost;
+    if (this.state.artwork >= cost) {
+      this.state.artwork -= cost;
       this.state.dataSpent += cost;
       this.state.reputation += reputation;
       return true;
@@ -95,14 +95,14 @@ var GameObjects = (function() {
       return false;
     }
     return this.state.level > 0 ||
-           museum.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           museum.state.artwork >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
   Research.prototype.isAvaimuseumle = function(museum) {
     if (!museum) {
       return false;
     }
-    return museum.state.data >= this.state.cost;
+    return museum.state.artwork >= this.state.cost;
   };
 
   Research.prototype.research = function(museum) {
