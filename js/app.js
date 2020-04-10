@@ -7,7 +7,7 @@
 
   var museum = game.museum;
   var collection = game.collection;
-  var curators = game.curators;
+  var workers = game.workers;
   var upgrades = game.upgrades;
   var achievements = game.achievements;
   var allObjects = game.allObjects;
@@ -25,7 +25,7 @@
 
   app.filter('currency', ['$filter', function($filter) {
     return function(input) {
-      return 'JTN ' + $filter('niceNumber')(input);
+      return '&euro; ' + $filter('niceNumber')(input);
     };
   }]);
 
@@ -35,39 +35,39 @@
     };
   }]);
 
-  app.controller('TicketOfficeController', function() {
+  app.controller('TicketController', function() {
     this.click = function() {
       museum.clickDetector();
-      ticketoffice.addEvent();
-      UI.showUpdateValue("#update-artwork", museum.state.ticketoffice);
+      ticket.addEvent();
+      UI.showUpdateValue("#update-artwork", museum.state.ticket);
       return false;
     };
   });
 
   // Hack to prevent text highlighting
-  document.getElementById('ticketoffice').addEventListener('mousedown', function(e) {
+  document.getElementById('ticket').addEventListener('mousedown', function(e) {
     e.preventDefault();
   });
 
   app.controller('MuseumController', ['$interval', function($interval) {
     this.museum = museum;
-    this.showTicketInfo = function() {
-      if (!this._ticketInfo) {
-        this._ticketInfo = Helpers.loadFile('html/ticketoffice.html');
+    this.showDetectorInfo = function() {
+      if (!this._detectorInfo) {
+        this._detectorInfo = Helpers.loadFile('html/ticket.html');
       }
-      UI.showModal('TicketOffice', this._ticketInfo);
+      UI.showModal('Ticket', this._detectorInfo);
     };
     $interval(function() {  // one tick
       var grant = museum.getGrant();
       UI.showUpdateValue("#update-cashflow", grant);
       var sum = 0;
-      for (var i = 0; i < curators.length; i++) {
-        sum += curators[i].state.hired * curators[i].state.rate;
+      for (var i = 0; i < workers.length; i++) {
+        sum += workers[i].state.hired * workers[i].state.rate;
       }
       if (sum > 0) {
         museum.acquireData(sum);
         UI.showUpdateValue("#update-artwork", sum);
-        ticketoffice.addEventExternal(curators.map(function(w) {
+        ticket.addEventExternal(workers.map(function(w) {
           return w.state.hired;
         }).reduce(function(a, b){return a + b}, 0));
       }
@@ -96,7 +96,7 @@
   }]);
 
   app.controller('HRController', function() {
-    this.curators = curators;
+    this.workers = workers;
     this.isVisible = function(worker) {
       return worker.isVisible(museum);
     };
