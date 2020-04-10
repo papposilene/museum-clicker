@@ -1,4 +1,4 @@
-function ParticleEvent(type, count, external)
+function MuseumEvent(type, count, external)
 {
     this.work = typeof external !== 'undefined' ? external : false;
     this.type = type;
@@ -12,17 +12,17 @@ function ParticleEvent(type, count, external)
     switch (this.type.name)
     {
         case 'electron':
-            this.length = detector.radius.siliconSpace * detector.ratio + Math.round((detector.radius.ecal * detector.ratio + 10 - detector.radius.siliconSpace * detector.ratio) * Math.random());
+            this.length = ticketoffice.radius.siliconSpace * ticketoffice.ratio + Math.round((ticketoffice.radius.ecal * ticketoffice.ratio + 10 - ticketoffice.radius.siliconSpace * ticketoffice.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 20 + Math.round((100 - 20) * Math.random());
             break;
         case 'jet':
-            this.length = detector.radius.ecal * detector.ratio + Math.round((detector.radius.mucal * detector.ratio - detector.radius.ecal * detector.ratio) * Math.random());
+            this.length = ticketoffice.radius.ecal * ticketoffice.ratio + Math.round((ticketoffice.radius.mucal * ticketoffice.ratio - ticketoffice.radius.ecal * ticketoffice.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 40 + Math.round((200 - 40) * Math.random());
             break;
         case 'muon':
-            this.length = detector.radius.mucal * detector.ratio + 3 * detector.radius.mucalDark * detector.ratio + Math.round((4 * detector.radius.mucalLight * detector.ratio + 2 * detector.radius.mucalDark * detector.ratio) * Math.random());
+            this.length = ticketoffice.radius.mucal * ticketoffice.ratio + 3 * ticketoffice.radius.mucalDark * ticketoffice.ratio + Math.round((4 * ticketoffice.radius.mucalLight * ticketoffice.ratio + 2 * ticketoffice.radius.mucalDark * ticketoffice.ratio) * Math.random());
             this.direction = Math.random() * Math.PI * 2;
             this.radius = 200 + Math.round((600 - 200) * Math.random());
             break;
@@ -31,13 +31,13 @@ function ParticleEvent(type, count, external)
     this.draw(16, true);
 };
 
-ParticleEvent.prototype.draw = function(duration, init)
+MuseumEvent.prototype.draw = function(duration, init)
 {
     init = typeof init !== 'undefined' ? init : false;
 
-    var ctx = detector.events.ctx;
-    var cx = detector.width / 2;
-    var cy = detector.height / 2;
+    var ctx = ticketoffice.events.ctx;
+    var cx = ticketoffice.width / 2;
+    var cy = ticketoffice.height / 2;
 
     ctx.save();
 
@@ -60,4 +60,3 @@ ParticleEvent.prototype.draw = function(duration, init)
         this.alpha -= 0.03 / 16 * duration;
     }
 };
-
