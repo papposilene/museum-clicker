@@ -20,10 +20,10 @@ var GameObjects = (function() {
    */
   var Museum = function() {
     GameObject.apply(this, [{
-                             key : 'museum',
+                             key : 'lab',
                              state : {
                                name : 'Give your museum an awesome name!',
-                               ticketoffice : 1,
+                               ticket : 1,
                                factor : 5,
                                artwork : 0,
                                money : 0,
@@ -42,27 +42,27 @@ var GameObjects = (function() {
 
   Museum.prototype.constructor = Museum;
 
-  Museum.prototype.getGrant = function() {
+  Museum.prototype.getMoney = function() {
     var addition = this.state.reputation * this.state.factor;
     this.state.money += addition;
     this.state.moneyCollected += addition;
     return addition;
   };
 
-  Museum.prototype.acquireData = function(amount) {
+  Museum.prototype.acquireArtwork = function(amount) {
     this.state.artwork += amount;
     this.state.artworkCollected += amount;
   };
 
-  Museum.prototype.clickDetector = function() {
+  Museum.prototype.clickTicket = function() {
     this.state.clicks += 1;
-    this.acquireData(this.state.ticketoffice);
+    this.acquireArtwork(this.state.ticket);
   };
 
-  Museum.prototype.research = function(cost, reputation) {
+  Museum.prototype.collection = function(cost, reputation) {
     if (this.state.artwork >= cost) {
       this.state.artwork -= cost;
-      this.state.dataSpent += cost;
+      this.state.artworkSpent += cost;
       this.state.reputation += reputation;
       return true;
     }
@@ -78,19 +78,19 @@ var GameObjects = (function() {
     return false;
   };
 
-  /** @class Research
+  /** @class Collection
    */
-  var Research = function(obj) {
+  var Collection = function(obj) {
     GameObject.apply(this, [obj]);
     this.state.level = 0;
     this.state.interesting = false;
   };
 
-  Research.prototype = Object.create(GameObject.prototype);
+  Collection.prototype = Object.create(GameObject.prototype);
 
-  Research.prototype.constructor = Research;
+  Collection.prototype.constructor = Collection;
 
-  Research.prototype.isVisible = function(museum) {
+  Collection.prototype.isVisible = function(museum) {
     if (!museum) {
       return false;
     }
@@ -98,15 +98,15 @@ var GameObjects = (function() {
            museum.state.artwork >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Research.prototype.isAvaimuseumle = function(museum) {
+  Collection.prototype.isAvailable = function(museum) {
     if (!museum) {
       return false;
     }
     return museum.state.artwork >= this.state.cost;
   };
 
-  Research.prototype.research = function(museum) {
-    if (museum && museum.research(this.state.cost, this.state.reputation)) {
+  Collection.prototype.collection = function(museum) {
+    if (museum && museum.collection(this.state.cost, this.state.reputation)) {
       this.state.level++;
       if (this.state.info_levels.length > 0 &&
           this.state.level === this.state.info_levels[0]) {
@@ -120,7 +120,7 @@ var GameObjects = (function() {
     return -1;
   };
 
-  Research.prototype.getInfo = function() {
+  Collection.prototype.getInfo = function() {
     if (!this._info) {
       this._info = Helpers.loadFile(this.info);
     }
@@ -148,7 +148,7 @@ var GameObjects = (function() {
            museum.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Worker.prototype.isAvaimuseumle = function(museum) {
+  Worker.prototype.isAvailable = function(museum) {
     if (!museum) {
       return false;
     }
@@ -193,7 +193,7 @@ var GameObjects = (function() {
     return true;
   };
 
-  Upgrade.prototype.isAvaimuseumle = function(museum, allObjects) {
+  Upgrade.prototype.isAvailable = function(museum, allObjects) {
     if (!museum || !allObjects) {
       return false;
     }
@@ -239,14 +239,14 @@ var GameObjects = (function() {
 
   Achievement.prototype = Object.create(GameObject.prototype);
 
-  Achievement.prototype.validate = function(museum, allObjects, saveTime) {
+  Achievement.prototype.validate = function(lab, allObjects, saveTime) {
     if (this.state.timeAchieved) {
       return true;
     }
     if (allObjects.hasOwnProperty(this.targetKey) &&
         allObjects[this.targetKey].state.hasOwnProperty(this.targetProperty) &&
         allObjects[this.targetKey].state[this.targetProperty] >= this.threshold) {
-      this.state.timeAchieved = museum.state.time + new Date().getTime() - saveTime;
+      this.state.timeAchieved = lab.state.time + new Date().getTime() - saveTime;
       UI.showAchievement(this);
       return true;
     }
@@ -265,7 +265,7 @@ var GameObjects = (function() {
   // Expose classes in module.
   return {
     Museum: Museum,
-    Research: Research,
+    Collection: Collection,
     Worker: Worker,
     Upgrade: Upgrade,
     Achievement: Achievement
