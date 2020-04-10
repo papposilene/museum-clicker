@@ -37,7 +37,7 @@
 
   app.controller('TicketController', function() {
     this.click = function() {
-      museum.clickDetector();
+      museum.clickTicket();
       ticket.addEvent();
       UI.showUpdateValue("#update-artwork", museum.state.ticket);
       return false;
@@ -51,11 +51,11 @@
 
   app.controller('MuseumController', ['$interval', function($interval) {
     this.museum = museum;
-    this.showDetectorInfo = function() {
-      if (!this._detectorInfo) {
-        this._detectorInfo = Helpers.loadFile('html/ticket.html');
+    this.showTicketInfo = function() {
+      if (!this._ticketInfo) {
+        this._ticketInfo = Helpers.loadFile('html/ticket.html');
       }
-      UI.showModal('Ticket', this._detectorInfo);
+      UI.showModal('Ticket', this._ticketInfo);
     };
     $interval(function() {  // one tick
       var cashflow = museum.getMoney();
@@ -82,7 +82,7 @@
     this.isAvailable = function(item) {
       return item.isAvailable(museum);
     };
-    this.doResearch = function(item) {
+    this.doCollection = function(item) {
       var cost = item.collection(museum);
       if (cost > 0) {
         UI.showUpdateValue("#update-artwork", -cost);
