@@ -1,4 +1,4 @@
-var detector =
+var ticket =
 {
     core:
     {
@@ -79,103 +79,103 @@ var detector =
 
     animate: function(time)
     {
-        var duration = typeof time !== 'undefined' ? time - detector.lastRender : 16;
-        detector.lastRender = time;
+        var duration = typeof time !== 'undefined' ? time - ticket.lastRender : 16;
+        ticket.lastRender = time;
 
-        requestAnimFrame(detector.animate);
-        detector.draw(duration);
+        requestAnimFrame(ticket.animate);
+        ticket.draw(duration);
     },
 
     init: function(baseSize)
     {
-        detector.core.canvas = document.getElementById('detector-core');
-        detector.core.ctx = detector.core.canvas.getContext('2d');
-        //detector.core.ctx = new C2S(400,400);
+        ticket.core.canvas = document.getElementById('ticket-core');
+        ticket.core.ctx = ticket.core.canvas.getContext('2d');
+        //ticket.core.ctx = new C2S(400,400);
 
-        detector.events.canvas = document.getElementById('detector-events');
-        detector.events.ctx = detector.events.canvas.getContext('2d');
+        ticket.events.canvas = document.getElementById('ticket-events');
+        ticket.events.ctx = ticket.events.canvas.getContext('2d');
 
         var devicePixelRatio = window.devicePixelRatio || 1;
-        var backingStoreRatio = detector.core.ctx.webkitBackingStorePixelRatio ||
-                                detector.core.ctx.mozBackingStorePixelRatio ||
-                                detector.core.ctx.msBackingStorePixelRatio ||
-                                detector.core.ctx.oBackingStorePixelRatio ||
-                                detector.core.ctx.backingStorePixelRatio || 1;
+        var backingStoreRatio = ticket.core.ctx.webkitBackingStorePixelRatio ||
+                                ticket.core.ctx.mozBackingStorePixelRatio ||
+                                ticket.core.ctx.msBackingStorePixelRatio ||
+                                ticket.core.ctx.oBackingStorePixelRatio ||
+                                ticket.core.ctx.backingStorePixelRatio || 1;
 
         var ratio = devicePixelRatio / backingStoreRatio;
 
-        detector.ratio = baseSize / 400;
+        ticket.ratio = baseSize / 400;
 
-        detector.width = baseSize;
-        detector.height = baseSize;
+        ticket.width = baseSize;
+        ticket.height = baseSize;
 
-        detector.core.canvas.width = baseSize;
-        detector.core.canvas.height = baseSize;
+        ticket.core.canvas.width = baseSize;
+        ticket.core.canvas.height = baseSize;
 
-        detector.events.canvas.width = baseSize;
-        detector.events.canvas.height = baseSize;
+        ticket.events.canvas.width = baseSize;
+        ticket.events.canvas.height = baseSize;
 
         if (devicePixelRatio !== backingStoreRatio) {
-            var oldWidth = detector.core.canvas.width;
-            var oldHeight = detector.core.canvas.height;
+            var oldWidth = ticket.core.canvas.width;
+            var oldHeight = ticket.core.canvas.height;
 
-            detector.core.canvas.width = oldWidth * ratio;
-            detector.core.canvas.height = oldHeight * ratio;
-            detector.core.canvas.style.width = oldWidth + 'px';
-            detector.core.canvas.style.height = oldHeight + 'px';
+            ticket.core.canvas.width = oldWidth * ratio;
+            ticket.core.canvas.height = oldHeight * ratio;
+            ticket.core.canvas.style.width = oldWidth + 'px';
+            ticket.core.canvas.style.height = oldHeight + 'px';
 
-            detector.events.canvas.width = oldWidth * ratio;
-            detector.events.canvas.height = oldHeight * ratio;
-            detector.events.canvas.style.width = oldWidth + 'px';
-            detector.events.canvas.style.height = oldHeight + 'px';
+            ticket.events.canvas.width = oldWidth * ratio;
+            ticket.events.canvas.height = oldHeight * ratio;
+            ticket.events.canvas.style.width = oldWidth + 'px';
+            ticket.events.canvas.style.height = oldHeight + 'px';
 
             // now scale the context to counter
             // the fact that we've manually scaled
             // our canvas element
-            detector.core.ctx.scale(ratio, ratio);
-            detector.events.ctx.scale(ratio, ratio);
+            ticket.core.ctx.scale(ratio, ratio);
+            ticket.events.ctx.scale(ratio, ratio);
         }
 
-        detector.coreDraw();
-        detector.animate();
+        ticket.coreDraw();
+        ticket.animate();
     },
 
     coreDraw: function()
     {
-        var ctx = detector.core.ctx;
-        var cx = detector.width / 2;
-        var cy = detector.height / 2;
+        var ctx = ticket.core.ctx;
+        var cx = ticket.width / 2;
+        var cy = ticket.height / 2;
 
-        ctx.clearRect(0, 0, detector.width, detector.width);
+        ctx.clearRect(0, 0, ticket.width, ticket.width);
 
         var muSplit = 2/12;
         for (var k = 3; k >= 1; k--) {
-            ctx.strokeStyle = detector.colors.mucalDarkLine;
-            ctx.fillStyle = detector.colors.mucalDark;
+            ctx.strokeStyle = ticket.colors.mucalDarkLine;
+            ctx.fillStyle = ticket.colors.mucalDark;
             
             ctx.beginPath();
-            ctx.moveTo(cx + (detector.radius.mucal + k * detector.radius.mucalLight + k * detector.radius.mucalDark) * Math.cos(Math.PI * muSplit) * detector.ratio, cy + (detector.radius.mucal + k * detector.radius.mucalLight + k * detector.radius.mucalDark) * Math.sin(Math.PI * muSplit) * detector.ratio);
+            ctx.moveTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.sin(Math.PI * muSplit) * ticket.ratio);
             for (var i = 1; i <= 13; i++) {
-                ctx.lineTo(cx + (detector.radius.mucal + k * detector.radius.mucalLight + k * detector.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * detector.ratio, cy + (detector.radius.mucal + k * detector.radius.mucalLight + k * detector.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * detector.ratio);
+                ctx.lineTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
             }
             ctx.stroke();
             ctx.fill();
 
             ctx.beginPath();
-            ctx.moveTo(cx + (detector.radius.mucal + k * detector.radius.mucalLight + (k-1) * detector.radius.mucalDark) * Math.cos(Math.PI * muSplit) * detector.ratio, cy + (detector.radius.mucal + k * detector.radius.mucalLight + (k-1) * detector.radius.mucalDark) * Math.sin(Math.PI * muSplit) * detector.ratio);
+            ctx.moveTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.sin(Math.PI * muSplit) * ticket.ratio);
             for (var i = 1; i <= 13; i++) {
-                ctx.lineTo(cx + (detector.radius.mucal + k * detector.radius.mucalLight + (k-1) * detector.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * detector.ratio, cy + (detector.radius.mucal + k * detector.radius.mucalLight + (k-1) * detector.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * detector.ratio);
+                ctx.lineTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
             }
             ctx.stroke();
-            ctx.fillStyle = detector.colors.mucalLight;
+            ctx.fillStyle = ticket.colors.mucalLight;
             ctx.fill();
         }
 
-        ctx.strokeStyle = detector.colors.mucalDarkLine;
+        ctx.strokeStyle = ticket.colors.mucalDarkLine;
         ctx.beginPath();
-        ctx.moveTo(cx + detector.radius.mucal * Math.cos(Math.PI * muSplit) * detector.ratio, cy + detector.radius.mucal * Math.sin(Math.PI * muSplit) * detector.ratio);
+        ctx.moveTo(cx + ticket.radius.mucal * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + ticket.radius.mucal * Math.sin(Math.PI * muSplit) * ticket.ratio);
         for (var i = 1; i <= 13; i++) {
-            ctx.lineTo(cx + detector.radius.mucal * Math.cos(Math.PI * i * muSplit) * detector.ratio, cy + detector.radius.mucal * Math.sin(Math.PI * i * muSplit) * detector.ratio);
+            ctx.lineTo(cx + ticket.radius.mucal * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + ticket.radius.mucal * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
         }
         ctx.stroke();
         ctx.fillStyle = '#FFFFFF';
@@ -183,82 +183,82 @@ var detector =
 
 
         ctx.beginPath();
-        ctx.strokeStyle = detector.colors.darkRingLine;
-        ctx.fillStyle = detector.colors.darkRing;
-        ctx.arc(cx, cy, detector.radius.darkRing2 * detector.ratio, 0, Math.PI * 2, true);
+        ctx.strokeStyle = ticket.colors.darkRingLine;
+        ctx.fillStyle = ticket.colors.darkRing;
+        ctx.arc(cx, cy, ticket.radius.darkRing2 * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
         ctx.stroke();
 
         ctx.beginPath();
         ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, detector.radius.lightRingSpace * detector.ratio, 0, Math.PI * 2, true);
+        ctx.arc(cx, cy, ticket.radius.lightRingSpace * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
 
         ctx.beginPath();
-        ctx.strokeStyle = detector.colors.lightRingLine;
-        ctx.fillStyle = detector.colors.lightRing;
-        ctx.arc(cx, cy, detector.radius.lightRing * detector.ratio, 0, Math.PI * 2, true);
+        ctx.strokeStyle = ticket.colors.lightRingLine;
+        ctx.fillStyle = ticket.colors.lightRing;
+        ctx.arc(cx, cy, ticket.radius.lightRing * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
         ctx.stroke();
 
         ctx.beginPath();
         ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, detector.radius.darkRing1Space * detector.ratio, 0, Math.PI * 2, true);
+        ctx.arc(cx, cy, ticket.radius.darkRing1Space * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
 
         ctx.beginPath();
-        ctx.strokeStyle = detector.colors.darkRingLine
-        ctx.fillStyle = detector.colors.darkRing;
-        ctx.arc(cx, cy, detector.radius.darkRing1 * detector.ratio, 0, Math.PI * 2, true);
+        ctx.strokeStyle = ticket.colors.darkRingLine
+        ctx.fillStyle = ticket.colors.darkRing;
+        ctx.arc(cx, cy, ticket.radius.darkRing1 * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
         ctx.stroke();
 
         ctx.beginPath();
         ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, detector.radius.ecal * detector.ratio, 0, Math.PI * 2, true);
+        ctx.arc(cx, cy, ticket.radius.ecal * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
 
 
-        ctx.strokeStyle = detector.colors.hcalLine;
-        ctx.fillStyle = detector.colors.hcal;
+        ctx.strokeStyle = ticket.colors.hcalLine;
+        ctx.fillStyle = ticket.colors.hcal;
         var calSplit = 20/2;
         for (var i = 0; i < 20; i++) {
             ctx.beginPath();
-            ctx.moveTo(cx + detector.radius.ecal * Math.cos(Math.PI * i / calSplit) * detector.ratio, cy + detector.radius.ecal * Math.sin(Math.PI * i / calSplit) * detector.ratio);
-            ctx.lineTo(cx + detector.radius.hcal * Math.cos(Math.PI * i / calSplit) * detector.ratio, cy + detector.radius.hcal * Math.sin(Math.PI * i / calSplit) * detector.ratio);
-            ctx.arc(cx, cy, detector.radius.hcal * detector.ratio, Math.PI * i / calSplit, Math.PI * (i+1) / calSplit, false);
-            ctx.lineTo(cx + detector.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * detector.ratio, cy + detector.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * detector.ratio);
-            ctx.lineTo(cx + detector.radius.ecal * Math.cos(Math.PI * i / calSplit) * detector.ratio, cy + detector.radius.ecal * Math.sin(Math.PI * i / calSplit) * detector.ratio);
+            ctx.moveTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
+            ctx.lineTo(cx + ticket.radius.hcal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.hcal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
+            ctx.arc(cx, cy, ticket.radius.hcal * ticket.ratio, Math.PI * i / calSplit, Math.PI * (i+1) / calSplit, false);
+            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
+            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
             ctx.closePath();
             ctx.fill();
             ctx.stroke();
         }
 
-        ctx.strokeStyle = detector.colors.ecalLine;
-        ctx.fillStyle = detector.colors.ecal;
+        ctx.strokeStyle = ticket.colors.ecalLine;
+        ctx.fillStyle = ticket.colors.ecal;
         var calSplit = 20/2;
         for (var i = 0; i < 20; i++) {
             ctx.beginPath();
-            ctx.moveTo(cx + detector.radius.siliconSpace * Math.cos(Math.PI * i / calSplit) * detector.ratio, cy + detector.radius.siliconSpace * Math.sin(Math.PI * i / calSplit) * detector.ratio);
-            ctx.lineTo(cx + detector.radius.ecal * Math.cos(Math.PI * i / calSplit) * detector.ratio, cy + detector.radius.ecal * Math.sin(Math.PI * i / calSplit) * detector.ratio);
-            ctx.lineTo(cx + detector.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * detector.ratio, cy + detector.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * detector.ratio);
-            ctx.lineTo(cx + detector.radius.siliconSpace * Math.cos(Math.PI * (i+1) / calSplit) * detector.ratio, cy + detector.radius.siliconSpace * Math.sin(Math.PI * (i+1) / calSplit) * detector.ratio);
+            ctx.moveTo(cx + ticket.radius.siliconSpace * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.siliconSpace * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
+            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
+            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
+            ctx.lineTo(cx + ticket.radius.siliconSpace * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.siliconSpace * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
             ctx.closePath();
             ctx.fill();
             ctx.stroke();
         }
 
         ctx.beginPath();
-        ctx.strokeStyle = detector.colors.siliconRingLine;
-        ctx.fillStyle = detector.colors.siliconRing;
-        ctx.arc(cx, cy, detector.radius.silicon * detector.ratio, 0, Math.PI * 2, true);
+        ctx.strokeStyle = ticket.colors.siliconRingLine;
+        ctx.fillStyle = ticket.colors.siliconRing;
+        ctx.arc(cx, cy, ticket.radius.silicon * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.strokeStyle = detector.colors.siliconRingLine;
-        ctx.fillStyle = detector.colors.siliconRing;
-        ctx.arc(cx, cy, detector.radius.siliconInner * detector.ratio, 0, Math.PI * 2, true);
+        ctx.strokeStyle = ticket.colors.siliconRingLine;
+        ctx.fillStyle = ticket.colors.siliconRing;
+        ctx.arc(cx, cy, ticket.radius.siliconInner * ticket.ratio, 0, Math.PI * 2, true);
         ctx.fill();
         ctx.stroke();
     },
@@ -268,42 +268,42 @@ var detector =
         var num = Math.max(3, Math.ceil(15 * Math.random()));
 
         for (var i = 0; i < num; i++) {
-            var index = Math.round(Math.random() * (detector.tracks.length - 1));
-            var event = new ParticleEvent(detector.tracks[index], num);
-            detector.events.list.push(event);
+            var index = Math.round(Math.random() * (ticket.tracks.length - 1));
+            var event = new ParticleEvent(ticket.tracks[index], num);
+            ticket.events.list.push(event);
         }
     },
 
     addEventExternal: function(numWorkers)
     {
-        if (!detector.visible) {
+        if (!ticket.visible) {
             return;
         }
 
         var num = Math.min(20 * numWorkers / 10, 20);
 
         for (var i = 0; i < num; i++) {
-            var index = Math.round(Math.random() * (detector.tracks.length - 1));
-            var event = new ParticleEvent(detector.tracks[index], num, true);
-            detector.events.list.push(event);
+            var index = Math.round(Math.random() * (ticket.tracks.length - 1));
+            var event = new ParticleEvent(ticket.tracks[index], num, true);
+            ticket.events.list.push(event);
         }
     },
 
     draw: function(duration)
     {
-        detector.events.ctx.clearRect(0, 0, detector.width, detector.height);
+        ticket.events.ctx.clearRect(0, 0, ticket.width, ticket.height);
 
         var del = -1;
-        for (var e in detector.events.list) {
-            if (detector.events.list[e].alpha > 0) {
-                detector.events.list[e].draw(duration);
+        for (var e in ticket.events.list) {
+            if (ticket.events.list[e].alpha > 0) {
+                ticket.events.list[e].draw(duration);
             } else {
                 del = e;
             }
         }
 
         if (del > 0) {
-            detector.events.list.splice(0, del);
+            ticket.events.list.splice(0, del);
         }
     }
 };
@@ -319,4 +319,4 @@ window.requestAnimFrame = (function(){
            };
 })();
 
-(function() { detector.init(400); $('#detector').width(400).height(400); })();
+(function() { ticket.init(400); $('#ticket').width(400).height(400); })();
