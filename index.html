@@ -86,7 +86,7 @@
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
                     <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ r.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
-                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fa fa-cogs"></i> <small>{{ c.state.cost | niceNumber }} data</small></button>
+                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fa fa-cogs"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
                     <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="fa {{ c.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
                   </div>
                   </div>
