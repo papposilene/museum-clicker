@@ -1,26 +1,26 @@
 [
   {
-    "description": "CP violation discovery!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-cpv-1",
+    "description": "Cabinet of curiosities created!",
+    "icon": "fa-university",
+    "key": "achievement-collection-coc-1",
     "threshold": 1,
-    "targetKey": "research-cpv",
+    "targetKey": "collection-coc",
     "targetProperty": "level"
   },
   {
-    "description": "J/\u03c8 discovery!",
+    "description": "Greek colonisation!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-1",
+    "key": "achievement-collection-greece-roma-1",
     "threshold": 1,
-    "targetKey": "research-jpsi",
+    "targetKey": "collection-greece-roma",
     "targetProperty": "level"
   },
   {
-    "description": "\u03c4 lepton discovery!",
+    "description": "Opening of the mouth ceremony!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-1",
+    "key": "achievement-collection-egypt-1",
     "threshold": 1,
-    "targetKey": "research-tau",
+    "targetKey": "collection-egypt",
     "targetProperty": "level"
   },
   {
@@ -808,7 +808,7 @@
     "threshold": 1000000
   },
   {
-    "description": "100 data collected!",
+    "description": "100 artworks acquired and conserved in your museum!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-100",
     "targetProperty": "artworkCollected",
@@ -816,7 +816,7 @@
     "threshold": 100
   },
   {
-    "description": "10k data collected!",
+    "description": "10k artworks acquired and conserved in your museum!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10k",
     "targetProperty": "artworkCollected",
@@ -824,7 +824,7 @@
     "threshold": 10000
   },
   {
-    "description": "1M data collected!",
+    "description": "1M artworks acquired and conserved in your museum!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-1M",
     "targetProperty": "artworkCollected",
@@ -832,7 +832,7 @@
     "threshold": 1000000
   },
   {
-    "description": "100M data collected!",
+    "description": "100M artworks acquired and conserved in your museum!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-100M",
     "targetProperty": "artworkCollected",
@@ -840,7 +840,7 @@
     "threshold": 100000000
   },
   {
-    "description": "10G data collected!",
+    "description": "10G artworks acquired and conserved in your museum!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10G",
     "targetProperty": "artworkCollected",
@@ -848,40 +848,40 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
-    "icon": "fa-money",
+    "description": "Despite the non-profit of your museum institution, you have raised 100 MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-100",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
     "threshold": 100
   },
   {
-    "description": "10k MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
-    "icon": "fa-money",
+    "description": "Despite the non-profit of your museum institution, you have raised 10k MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-10k",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
     "threshold": 10000
   },
   {
-    "description": "1M MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
-    "icon": "fa-money",
+    "description": "Despite the non-profit of your museum institution, you have raised 1M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-cgollected-1M",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
     "threshold": 1000000
   },
   {
-    "description": "100M MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
-    "icon": "fa-money",
+    "description": "Despite the non-profit of your museum institution, you have raised 100M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-100M",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
     "threshold": 100000000
   },
   {
-    "description": "10G MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
-    "icon": "fa-money",
+    "description": "Despite the non-profit of your museum institution, you have raised 10G MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-10G",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
@@ -928,40 +928,40 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 MuseuMoney spent!!",
-    "icon": "fa-money",
+    "description": "100 MuseuMoney spent!",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-100",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
     "threshold": 100
   },
   {
-    "description": "10k MuseuMoney spent!!",
-    "icon": "fa-money",
+    "description": "10k MuseuMoney spent!",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-10k",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
     "threshold": 10000
   },
   {
-    "description": "1M MuseuMoney spent!!",
-    "icon": "fa-money",
+    "description": "1M MuseuMoney spent!",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-1M",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
     "threshold": 1000000
   },
   {
-    "description": "100M MuseuMoney spent!!",
-    "icon": "fa-money",
+    "description": "100M MuseuMoney spent!",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-100M",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
     "threshold": 100000000
   },
   {
-    "description": "10G MuseuMoney spent!!",
-    "icon": "fa-money",
+    "description": "10G MuseuMoney spent!",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-10G",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
