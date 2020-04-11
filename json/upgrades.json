@@ -4,7 +4,7 @@
     "name": "Kinderzimmer",
     "description": "A shared room for all your connoisseurs. Used to be a cupboard.",
     "effect": "Connoisseurs assign +2 artworks to artists per second.",
-    "icon": "fa-group",
+    "icon": "fa-baby",
     "cost": 4e2,
     "targets": [{ "key": "workers-connoisseurs", "property": "rate" }],
     "requirements": [{ "key": "workers-connoisseurs", "property": "hired", "threshold": 5 }],
