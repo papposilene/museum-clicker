@@ -1046,7 +1046,7 @@
   {
     "title": "100 MuseuMoney spent!",
     "description": "You had the first visit guides printed with the benefits of the ticket office.",
-    "icon": "fa-hand-holding-usd",
+    "icon": "fa-book",
     "key": "achievement-museumoney-spent-100",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
