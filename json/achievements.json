@@ -1,6 +1,7 @@
 [
   {
-    "description": "Cabinet of curiosities created!",
+    "title": "Cabinet of curiosities created!",
+    "description": "",
     "icon": "fa-university",
     "key": "achievement-collection-coc-1",
     "threshold": 1,
@@ -8,7 +9,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Greek colonisation!",
+    "title": "Greek colonisation!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-collection-greece-roma-1",
     "threshold": 1,
@@ -16,7 +18,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Opening of the mouth ceremony!",
+    "title": "Opening of the mouth ceremony!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-collection-egypt-1",
     "threshold": 1,
@@ -24,7 +27,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Beauty quark discovery!",
+    "title": "Beauty quark discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-beauty-1",
     "threshold": 1,
@@ -32,7 +36,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Gluons discovery!",
+    "title": "Gluons discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-gluons-1",
     "threshold": 1,
@@ -40,7 +45,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "W and Z boson discovery!",
+    "title": "W and Z boson discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-weak-1",
     "threshold": 1,
@@ -48,7 +54,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Top quark discovery!",
+    "title": "Top quark discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-top-1",
     "threshold": 1,
@@ -56,7 +63,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "B oscillation discovery!",
+    "title": "B oscillation discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-boscillations-1",
     "threshold": 1,
@@ -64,7 +72,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "Higgs boson discovery!",
+    "title": "Higgs boson discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-higgs-1",
     "threshold": 1,
@@ -72,7 +81,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "D*s\u207b discovery!",
+    "title": "D*s\u207b discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-dstars-1",
     "threshold": 1,
@@ -80,7 +90,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "\u039eb'- and \u039eb*- discovery!",
+    "title": "\u039eb'- and \u039eb*- discovery!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-xib-1",
     "threshold": 1,
@@ -88,7 +99,8 @@
     "targetProperty": "level"
   },
   {
-    "description": "CP violation research level 5!",
+    "title": "CP violation research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-cpv-5",
     "targetProperty": "level",
@@ -96,7 +108,8 @@
     "threshold": 5
   },
   {
-    "description": "CP violation research level 25!",
+    "title": "CP violation research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-cpv-25",
     "targetProperty": "level",
@@ -104,7 +117,8 @@
     "threshold": 25
   },
   {
-    "description": "CP violation research level 50!",
+    "title": "CP violation research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-cpv-50",
     "targetProperty": "level",
@@ -112,7 +126,8 @@
     "threshold": 50
   },
   {
-    "description": "CP violation research level 100!",
+    "title": "CP violation research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-cpv-100",
     "targetProperty": "level",
@@ -120,7 +135,8 @@
     "threshold": 100
   },
   {
-    "description": "J/\u03c8 research level 5!",
+    "title": "J/\u03c8 research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-jpsi-5",
     "targetProperty": "level",
@@ -128,7 +144,8 @@
     "threshold": 5
   },
   {
-    "description": "J/\u03c8 research level 25!",
+    "title": "J/\u03c8 research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-jpsi-25",
     "targetProperty": "level",
@@ -136,7 +153,8 @@
     "threshold": 25
   },
   {
-    "description": "J/\u03c8 research level 50!",
+    "title": "J/\u03c8 research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-jpsi-50",
     "targetProperty": "level",
@@ -144,7 +162,8 @@
     "threshold": 50
   },
   {
-    "description": "J/\u03c8 research level 100!",
+    "title": "J/\u03c8 research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-jpsi-100",
     "targetProperty": "level",
@@ -152,7 +171,8 @@
     "threshold": 100
   },
   {
-    "description": "\u03c4 lepton research level 5!",
+    "title": "\u03c4 lepton research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-tau-5",
     "targetProperty": "level",
@@ -160,7 +180,8 @@
     "threshold": 5
   },
   {
-    "description": "\u03c4 lepton research level 25!",
+    "title": "\u03c4 lepton research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-tau-25",
     "targetProperty": "level",
@@ -168,7 +189,8 @@
     "threshold": 25
   },
   {
-    "description": "\u03c4 lepton research level 50!",
+    "title": "\u03c4 lepton research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-tau-50",
     "targetProperty": "level",
@@ -176,7 +198,8 @@
     "threshold": 50
   },
   {
-    "description": "\u03c4 lepton research level 100!",
+    "title": "\u03c4 lepton research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-tau-100",
     "targetProperty": "level",
@@ -184,7 +207,8 @@
     "threshold": 100
   },
   {
-    "description": "Beauty quark research level 5!",
+    "title": "Beauty quark research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-beauty-5",
     "targetProperty": "level",
@@ -192,7 +216,8 @@
     "threshold": 5
   },
   {
-    "description": "Beauty quark research level 25!",
+    "title": "Beauty quark research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-beauty-25",
     "targetProperty": "level",
@@ -200,7 +225,8 @@
     "threshold": 25
   },
   {
-    "description": "Beauty quark research level 50!",
+    "title": "Beauty quark research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-beauty-50",
     "targetProperty": "level",
@@ -208,7 +234,8 @@
     "threshold": 50
   },
   {
-    "description": "Beauty quark research level 100!",
+    "title": "Beauty quark research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-beauty-100",
     "targetProperty": "level",
@@ -216,7 +243,8 @@
     "threshold": 100
   },
   {
-    "description": "Gluons research level 5!",
+    "title": "Gluons research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-gluons-5",
     "targetProperty": "level",
@@ -224,7 +252,8 @@
     "threshold": 5
   },
   {
-    "description": "Gluons research level 25!",
+    "title": "Gluons research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-gluons-25",
     "targetProperty": "level",
@@ -232,7 +261,8 @@
     "threshold": 25
   },
   {
-    "description": "Gluons research level 50!",
+    "title": "Gluons research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-gluons-50",
     "targetProperty": "level",
@@ -240,7 +270,8 @@
     "threshold": 50
   },
   {
-    "description": "Gluons research level 100!",
+    "title": "Gluons research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-gluons-100",
     "targetProperty": "level",
@@ -248,7 +279,8 @@
     "threshold": 100
   },
   {
-    "description": "W and Z boson research level 5!",
+    "title": "W and Z boson research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-weak-5",
     "targetProperty": "level",
@@ -256,7 +288,8 @@
     "threshold": 5
   },
   {
-    "description": "W and Z boson research level 25!",
+    "title": "W and Z boson research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-weak-25",
     "targetProperty": "level",
@@ -264,7 +297,8 @@
     "threshold": 25
   },
   {
-    "description": "W and Z boson research level 50!",
+    "title": "W and Z boson research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-weak-50",
     "targetProperty": "level",
@@ -272,7 +306,8 @@
     "threshold": 50
   },
   {
-    "description": "W and Z boson research level 100!",
+    "title": "W and Z boson research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-weak-100",
     "targetProperty": "level",
@@ -280,7 +315,8 @@
     "threshold": 100
   },
   {
-    "description": "Top quark research level 5!",
+    "title": "Top quark research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-top-5",
     "targetProperty": "level",
@@ -288,7 +324,8 @@
     "threshold": 5
   },
   {
-    "description": "Top quark research level 25!",
+    "title": "Top quark research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-top-25",
     "targetProperty": "level",
@@ -296,7 +333,8 @@
     "threshold": 25
   },
   {
-    "description": "Top quark research level 50!",
+    "title": "Top quark research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-top-50",
     "targetProperty": "level",
@@ -304,7 +342,8 @@
     "threshold": 50
   },
   {
-    "description": "Top quark research level 100!",
+    "title": "Top quark research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-top-100",
     "targetProperty": "level",
@@ -312,7 +351,8 @@
     "threshold": 100
   },
   {
-    "description": "B oscillation research level 5!",
+    "title": "B oscillation research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-boscillations-5",
     "targetProperty": "level",
@@ -320,7 +360,8 @@
     "threshold": 5
   },
   {
-    "description": "B oscillation research level 25!",
+    "title": "B oscillation research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-boscillations-25",
     "targetProperty": "level",
@@ -328,7 +369,8 @@
     "threshold": 25
   },
   {
-    "description": "B oscillation research level 50!",
+    "title": "B oscillation research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-boscillations-50",
     "targetProperty": "level",
@@ -336,7 +378,8 @@
     "threshold": 50
   },
   {
-    "description": "B oscillation research level 100!",
+    "title": "B oscillation research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-boscillations-100",
     "targetProperty": "level",
@@ -344,7 +387,8 @@
     "threshold": 100
   },
   {
-    "description": "Higgs boson research level 5!",
+    "title": "Higgs boson research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-higgs-5",
     "targetProperty": "level",
@@ -352,7 +396,8 @@
     "threshold": 5
   },
   {
-    "description": "Higgs boson research level 25!",
+    "title": "Higgs boson research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-higgs-25",
     "targetProperty": "level",
@@ -360,7 +405,8 @@
     "threshold": 25
   },
   {
-    "description": "Higgs boson research level 50!",
+    "title": "Higgs boson research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-higgs-50",
     "targetProperty": "level",
@@ -368,7 +414,8 @@
     "threshold": 50
   },
   {
-    "description": "Higgs boson research level 100!",
+    "title": "Higgs boson research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-higgs-100",
     "targetProperty": "level",
@@ -376,7 +423,8 @@
     "threshold": 100
   },
   {
-    "description": "D*s\u207b research level 5!",
+    "title": "D*s\u207b research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-dstars-5",
     "targetProperty": "level",
@@ -384,7 +432,8 @@
     "threshold": 5
   },
   {
-    "description": "D*s\u207b research level 25!",
+    "title": "D*s\u207b research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-dstars-25",
     "targetProperty": "level",
@@ -392,7 +441,8 @@
     "threshold": 25
   },
   {
-    "description": "D*s\u207b research level 50!",
+    "title": "D*s\u207b research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-dstars-50",
     "targetProperty": "level",
@@ -400,7 +450,8 @@
     "threshold": 50
   },
   {
-    "description": "D*s\u207b research level 100!",
+    "title": "D*s\u207b research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-dstars-100",
     "targetProperty": "level",
@@ -408,7 +459,8 @@
     "threshold": 100
   },
   {
-    "description": "\u039eb'- and \u039eb*- research level 5!",
+    "title": "\u039eb'- and \u039eb*- research level 5!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-xib-5",
     "targetProperty": "level",
@@ -416,7 +468,8 @@
     "threshold": 5
   },
   {
-    "description": "\u039eb'- and \u039eb*- research level 25!",
+    "title": "\u039eb'- and \u039eb*- research level 25!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-xib-25",
     "targetProperty": "level",
@@ -424,7 +477,8 @@
     "threshold": 25
   },
   {
-    "description": "\u039eb'- and \u039eb*- research level 50!",
+    "title": "\u039eb'- and \u039eb*- research level 50!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-xib-50",
     "targetProperty": "level",
@@ -432,7 +486,8 @@
     "threshold": 50
   },
   {
-    "description": "\u039eb'- and \u039eb*- research level 100!",
+    "title": "\u039eb'- and \u039eb*- research level 100!",
+    "description": "",
     "icon": "fa-cogs",
     "key": "achievement-research-xib-100",
     "targetProperty": "level",
@@ -440,7 +495,8 @@
     "threshold": 100
   },
   {
-    "description": "The first Master Students hired!",
+    "title": "The first Master Students hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-masterstudents-1",
     "threshold": 1,
@@ -448,7 +504,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first PhD Students hired!",
+    "title": "The first PhD Students hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-phdstudents-1",
     "threshold": 1,
@@ -456,7 +513,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Postdocs hired!",
+    "title": "The first Postdocs hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-postdocs-1",
     "threshold": 1,
@@ -464,7 +522,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Research Fellows hired!",
+    "title": "The first Research Fellows hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-fellows-1",
     "threshold": 1,
@@ -472,7 +531,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Permanent Staff hired!",
+    "title": "The first Permanent Staff hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-permanent-1",
     "threshold": 1,
@@ -480,7 +540,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Tenured Professors hired!",
+    "title": "The first Tenured Professors hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-profs-1",
     "threshold": 1,
@@ -488,7 +549,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Nobel Laureates hired!",
+    "title": "The first Nobel Laureates hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-nobel-1",
     "threshold": 1,
@@ -496,7 +558,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Summer Students hired!",
+    "title": "The first Summer Students hired!",
+    "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-summies-1",
     "threshold": 1,
@@ -504,7 +567,8 @@
     "targetProperty": "hired"
   },
   {
-    "description": "5 Master Students working for you!",
+    "title": "5 Master Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-5",
     "targetProperty": "hired",
@@ -512,7 +576,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Master Students working for you!",
+    "title": "25 Master Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-25",
     "targetProperty": "hired",
@@ -520,7 +585,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Master Students working for you!",
+    "title": "50 Master Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-50",
     "targetProperty": "hired",
@@ -528,7 +594,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Master Students working for you!",
+    "title": "100 Master Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-100",
     "targetProperty": "hired",
@@ -536,7 +603,8 @@
     "threshold": 100
   },
   {
-    "description": "5 PhD Students working for you!",
+    "title": "5 PhD Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-5",
     "targetProperty": "hired",
@@ -544,7 +612,8 @@
     "threshold": 5
   },
   {
-    "description": "25 PhD Students working for you!",
+    "title": "25 PhD Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-25",
     "targetProperty": "hired",
@@ -552,7 +621,8 @@
     "threshold": 25
   },
   {
-    "description": "50 PhD Students working for you!",
+    "title": "50 PhD Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-50",
     "targetProperty": "hired",
@@ -560,7 +630,8 @@
     "threshold": 50
   },
   {
-    "description": "100 PhD Students working for you!",
+    "title": "100 PhD Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-100",
     "targetProperty": "hired",
@@ -568,7 +639,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Postdocs working for you!",
+    "title": "5 Postdocs working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-postdocs-5",
     "targetProperty": "hired",
@@ -576,7 +648,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Postdocs working for you!",
+    "title": "25 Postdocs working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-postdocs-25",
     "targetProperty": "hired",
@@ -584,7 +657,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Postdocs working for you!",
+    "title": "50 Postdocs working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-postdocs-50",
     "targetProperty": "hired",
@@ -592,7 +666,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Postdocs working for you!",
+    "title": "100 Postdocs working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-postdocs-100",
     "targetProperty": "hired",
@@ -600,7 +675,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Research Fellows working for you!",
+    "title": "5 Research Fellows working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-fellows-5",
     "targetProperty": "hired",
@@ -608,7 +684,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Research Fellows working for you!",
+    "title": "25 Research Fellows working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-fellows-25",
     "targetProperty": "hired",
@@ -616,7 +693,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Research Fellows working for you!",
+    "title": "50 Research Fellows working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-fellows-50",
     "targetProperty": "hired",
@@ -624,7 +702,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Research Fellows working for you!",
+    "title": "100 Research Fellows working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-fellows-100",
     "targetProperty": "hired",
@@ -632,7 +711,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Permanent Staff working for you!",
+    "title": "5 Permanent Staff working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-5",
     "targetProperty": "hired",
@@ -640,7 +720,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Permanent Staff working for you!",
+    "title": "25 Permanent Staff working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-25",
     "targetProperty": "hired",
@@ -648,7 +729,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Permanent Staff working for you!",
+    "title": "50 Permanent Staff working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-50",
     "targetProperty": "hired",
@@ -656,7 +738,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Permanent Staff working for you!",
+    "title": "100 Permanent Staff working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-100",
     "targetProperty": "hired",
@@ -664,7 +747,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Tenured Professors working for you!",
+    "title": "5 Tenured Professors working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-profs-5",
     "targetProperty": "hired",
@@ -672,7 +756,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Tenured Professors working for you!",
+    "title": "25 Tenured Professors working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-profs-25",
     "targetProperty": "hired",
@@ -680,7 +765,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Tenured Professors working for you!",
+    "title": "50 Tenured Professors working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-profs-50",
     "targetProperty": "hired",
@@ -688,7 +774,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Tenured Professors working for you!",
+    "title": "100 Tenured Professors working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-profs-100",
     "targetProperty": "hired",
@@ -696,7 +783,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Nobel Laureates working for you!",
+    "title": "5 Nobel Laureates working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-nobel-5",
     "targetProperty": "hired",
@@ -704,7 +792,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Nobel Laureates working for you!",
+    "title": "25 Nobel Laureates working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-nobel-25",
     "targetProperty": "hired",
@@ -712,7 +801,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Nobel Laureates working for you!",
+    "title": "50 Nobel Laureates working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-nobel-50",
     "targetProperty": "hired",
@@ -720,7 +810,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Nobel Laureates working for you!",
+    "title": "100 Nobel Laureates working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-nobel-100",
     "targetProperty": "hired",
@@ -728,7 +819,8 @@
     "threshold": 100
   },
   {
-    "description": "5 Summer Students working for you!",
+    "title": "5 Summer Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-summies-5",
     "targetProperty": "hired",
@@ -736,7 +828,8 @@
     "threshold": 5
   },
   {
-    "description": "25 Summer Students working for you!",
+    "title": "25 Summer Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-summies-25",
     "targetProperty": "hired",
@@ -744,7 +837,8 @@
     "threshold": 25
   },
   {
-    "description": "50 Summer Students working for you!",
+    "title": "50 Summer Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-summies-50",
     "targetProperty": "hired",
@@ -752,7 +846,8 @@
     "threshold": 50
   },
   {
-    "description": "100 Summer Students working for you!",
+    "title": "100 Summer Students working for you!",
+    "description": "",
     "icon": "fa-users",
     "key": "achievement-workers-summies-100",
     "targetProperty": "hired",
@@ -760,7 +855,8 @@
     "threshold": 100
   },
   {
-    "description": "Your first artwork!",
+    "title": "Your first artwork!",
+    "description": "\"We have to start with something!\", dixit Dominique Vivant Denon one day.",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-1",
     "threshold": 1,
@@ -768,7 +864,8 @@
     "targetProperty": "artworks"
   },
   {
-    "description": "100 artworks!",
+    "title": "100 artworks!",
+    "description": "We're going to save time and buy the neighbor’s closets. There must be things that can be studied and exposed.",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-100",
     "targetProperty": "artworks",
@@ -776,7 +873,8 @@
     "threshold": 100
   },
   {
-    "description": "1k artworks!",
+    "title": "1k artworks!",
+    "description": "Napoleon has just returned from his extended weekend in Italy. He brought you some knick-knacks.",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-1k",
     "targetProperty": "artworks",
@@ -784,7 +882,8 @@
     "threshold": 1000
   },
   {
-    "description": "10k artworks!",
+    "title": "10k artworks!",
+    "description": "",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-10k",
     "targetProperty": "artworks",
@@ -792,7 +891,8 @@
     "threshold": 10000
   },
   {
-    "description": "100k artworks!",
+    "title": "100k artworks!",
+    "description": "",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-100k",
     "targetProperty": "artworks",
@@ -800,7 +900,8 @@
     "threshold": 100000
   },
   {
-    "description": "1M artworks!",
+    "title": "1M artworks!",
+    "description": "",
     "icon": "fa-hand-o-up",
     "key": "achievement-artworks-1M",
     "targetProperty": "artworks",
@@ -808,7 +909,8 @@
     "threshold": 1000000
   },
   {
-    "description": "100 artworks acquired and conserved in your museum!",
+    "title": "100 artworks acquired and conserved in your museum!",
+    "description": "",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-100",
     "targetProperty": "artworkCollected",
@@ -816,7 +918,8 @@
     "threshold": 100
   },
   {
-    "description": "10k artworks acquired and conserved in your museum!",
+    "title": "10k artworks acquired and conserved in your museum!",
+    "description": "",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10k",
     "targetProperty": "artworkCollected",
@@ -824,7 +927,8 @@
     "threshold": 10000
   },
   {
-    "description": "1M artworks acquired and conserved in your museum!",
+    "title": "1M artworks acquired and conserved in your museum!",
+    "description": "",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-1M",
     "targetProperty": "artworkCollected",
@@ -832,7 +936,8 @@
     "threshold": 1000000
   },
   {
-    "description": "100M artworks acquired and conserved in your museum!",
+    "title": "100M artworks acquired and conserved in your museum!",
+    "description": "",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-100M",
     "targetProperty": "artworkCollected",
@@ -840,7 +945,8 @@
     "threshold": 100000000
   },
   {
-    "description": "10G artworks acquired and conserved in your museum!",
+    "title": "10G artworks acquired and conserved in your museum!",
+    "description": "",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10G",
     "targetProperty": "artworkCollected",
@@ -848,7 +954,8 @@
     "threshold": 10000000000
   },
   {
-    "description": "Despite the non-profit of your museum institution, you have raised 100 MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "title": "Despite the non-profit of your museum institution, you have raised 100 MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-100",
     "targetProperty": "moneyCollected",
@@ -856,7 +963,8 @@
     "threshold": 100
   },
   {
-    "description": "Despite the non-profit of your museum institution, you have raised 10k MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "title": "Despite the non-profit of your museum institution, you have raised 10k MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-10k",
     "targetProperty": "moneyCollected",
@@ -864,7 +972,8 @@
     "threshold": 10000
   },
   {
-    "description": "Despite the non-profit of your museum institution, you have raised 1M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "title": "Despite the non-profit of your museum institution, you have raised 1M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-cgollected-1M",
     "targetProperty": "moneyCollected",
@@ -872,7 +981,8 @@
     "threshold": 1000000
   },
   {
-    "description": "Despite the non-profit of your museum institution, you have raised 100M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "title": "Despite the non-profit of your museum institution, you have raised 100M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-100M",
     "targetProperty": "moneyCollected",
@@ -880,7 +990,8 @@
     "threshold": 100000000
   },
   {
-    "description": "Despite the non-profit of your museum institution, you have raised 10G MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "title": "Despite the non-profit of your museum institution, you have raised 10G MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-collected-10G",
     "targetProperty": "moneyCollected",
@@ -888,7 +999,8 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "title": "100 artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "description": "",
     "icon": "fa-hdd",
     "key": "achievement-artwork-conserved-100",
     "targetProperty": "artworkSpent",
@@ -896,7 +1008,8 @@
     "threshold": 100
   },
   {
-    "description": "10k artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "title": "10k artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "description": "",
     "icon": "fa-hdd",
     "key": "achievement-artwork-conserved-10k",
     "targetProperty": "artworkSpent",
@@ -904,7 +1017,8 @@
     "threshold": 10000
   },
   {
-    "description": "1M artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "title": "1M artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "description": "",
     "icon": "fa-hdd",
     "key": "achievement-artwork-conserved-1M",
     "targetProperty": "artworkSpent",
@@ -912,7 +1026,8 @@
     "threshold": 1000000
   },
   {
-    "description": "100M artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "title": "100M artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "description": "",
     "icon": "fa-hdd",
     "key": "achievement-artwork-conserved-100M",
     "targetProperty": "artworkSpent",
@@ -920,7 +1035,8 @@
     "threshold": 100000000
   },
   {
-    "description": "10G artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "title": "10G artworks acquired, conserved, studied, communicated and exhibited to the public!",
+    "description": "",
     "icon": "fa-hdd",
     "key": "achievement-artwork-conserved-10G",
     "targetProperty": "artworkSpent",
@@ -928,7 +1044,8 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 MuseuMoney spent!",
+    "title": "100 MuseuMoney spent!",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-100",
     "targetProperty": "moneySpent",
@@ -936,7 +1053,8 @@
     "threshold": 100
   },
   {
-    "description": "10k MuseuMoney spent!",
+    "title": "10k MuseuMoney spent!",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-10k",
     "targetProperty": "moneySpent",
@@ -944,7 +1062,8 @@
     "threshold": 10000
   },
   {
-    "description": "1M MuseuMoney spent!",
+    "title": "1M MuseuMoney spent!",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-1M",
     "targetProperty": "moneySpent",
@@ -952,7 +1071,8 @@
     "threshold": 1000000
   },
   {
-    "description": "100M MuseuMoney spent!",
+    "title": "100M MuseuMoney spent!",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-100M",
     "targetProperty": "moneySpent",
@@ -960,7 +1080,8 @@
     "threshold": 100000000
   },
   {
-    "description": "10G MuseuMoney spent!",
+    "title": "10G MuseuMoney spent!",
+    "description": "",
     "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-10G",
     "targetProperty": "moneySpent",
