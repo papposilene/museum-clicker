@@ -73,7 +73,7 @@
     "name": "Subject of Study",
     "description": "Find them a subject of study for their thesis (and incidentally for the exhibition project).",
     "effect": "Master Students study twice as much artworks per second.",
-    "icon": "fa-group",
+    "icon": "fa-clipboard",
     "cost": 6e5,
     "targets": [{ "key": "workers-masterstudents", "property": "rate" }],
     "requirements": [{ "key": "upgrade-masterstudents2", "property": "used", "threshold": 1 }],
