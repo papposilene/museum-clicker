@@ -495,17 +495,26 @@
     "threshold": 100
   },
   {
-    "title": "The first Master Students hired!",
-    "description": "",
+    "title": "The first connoisseur hired!",
+    "description": "He's your little cousin. Your aunt asked you to take him out of his room.",
     "icon": "fa-user",
+    "key": "achievement-workers-connoisseurs-1",
+    "threshold": 1,
+    "targetKey": "workers-connoisseurs",
+    "targetProperty": "hired"
+  },
+  {
+    "title": "The first Master student hired!",
+    "description": "Another one who has the hope that you will intercede with his teachers so that he can graduate.",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-masterstudents-1",
     "threshold": 1,
     "targetKey": "workers-masterstudents",
     "targetProperty": "hired"
   },
   {
-    "title": "The first PhD Students hired!",
-    "description": "",
+    "title": "The first PhD student hired!",
+    "description": "Cool, your Master Students are developing Stockholm syndrome...",
     "icon": "fa-user",
     "key": "achievement-workers-phdstudents-1",
     "threshold": 1,
@@ -513,7 +522,7 @@
     "targetProperty": "hired"
   },
   {
-    "title": "The first Postdocs hired!",
+    "title": "The first postdoc hired!",
     "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-postdocs-1",
@@ -522,7 +531,7 @@
     "targetProperty": "hired"
   },
   {
-    "title": "The first Research Fellows hired!",
+    "title": "The first research fellow hired!",
     "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-fellows-1",
@@ -531,7 +540,16 @@
     "targetProperty": "hired"
   },
   {
-    "title": "The first Permanent Staff hired!",
+    "title": "The first art historian hired!",
+    "description": "His personal library becomes yours!",
+    "icon": "fa-user",
+    "key": "achievement-workers-arthistorians-1",
+    "threshold": 1,
+    "targetKey": "workers-arthistorians",
+    "targetProperty": "hired"
+  },
+  {
+    "title": "The first permanent staff hired!",
     "description": "",
     "icon": "fa-user",
     "key": "achievement-workers-permanent-1",
@@ -540,30 +558,12 @@
     "targetProperty": "hired"
   },
   {
-    "title": "The first Tenured Professors hired!",
-    "description": "",
+    "title": "The first ICOM member hired!",
+    "description": "The art world is almost yours!",
     "icon": "fa-user",
-    "key": "achievement-workers-profs-1",
+    "key": "achievement-workers-icom-1",
     "threshold": 1,
-    "targetKey": "workers-profs",
-    "targetProperty": "hired"
-  },
-  {
-    "title": "The first Nobel Laureates hired!",
-    "description": "",
-    "icon": "fa-user",
-    "key": "achievement-workers-nobel-1",
-    "threshold": 1,
-    "targetKey": "workers-nobel",
-    "targetProperty": "hired"
-  },
-  {
-    "title": "The first Summer Students hired!",
-    "description": "",
-    "icon": "fa-user",
-    "key": "achievement-workers-summies-1",
-    "threshold": 1,
-    "targetKey": "workers-summies",
+    "targetKey": "workers-icom",
     "targetProperty": "hired"
   },
   {
@@ -786,96 +786,96 @@
     "title": "5 Nobel Laureates working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-nobel-5",
+    "key": "achievement-workers-permanent-5",
     "targetProperty": "hired",
-    "targetKey": "workers-nobel",
+    "targetKey": "workers-permanent",
     "threshold": 5
   },
   {
     "title": "25 Nobel Laureates working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-nobel-25",
+    "key": "achievement-workers-permanent-25",
     "targetProperty": "hired",
-    "targetKey": "workers-nobel",
+    "targetKey": "workers-permanent",
     "threshold": 25
   },
   {
     "title": "50 Nobel Laureates working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-nobel-50",
+    "key": "achievement-workers-permanent-50",
     "targetProperty": "hired",
-    "targetKey": "workers-nobel",
+    "targetKey": "workers-permanent",
     "threshold": 50
   },
   {
     "title": "100 Nobel Laureates working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-nobel-100",
+    "key": "achievement-workers-permanent-100",
     "targetProperty": "hired",
-    "targetKey": "workers-nobel",
+    "targetKey": "workers-permanent",
     "threshold": 100
   },
   {
-    "title": "5 Summer Students working for you!",
-    "description": "",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-5",
+    "title": "5 ICOM student members!",
+    "description": "It's museumslavery with extra steps.",
+    "icon": "fa-user",
+    "key": "achievement-workers-icom-5",
     "targetProperty": "hired",
-    "targetKey": "workers-summies",
+    "targetKey": "workers-icom",
     "threshold": 5
   },
   {
-    "title": "25 Summer Students working for you!",
-    "description": "",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-25",
+    "title": "25 ICOFOM members are working for you!",
+    "description": "What is museology? Let's have a meeting to invent it.",
+    "icon": "fa-user-friends",
+    "key": "achievement-workers-icom-25",
     "targetProperty": "hired",
-    "targetKey": "workers-summies",
+    "targetKey": "workers-icom",
     "threshold": 25
   },
   {
-    "title": "50 Summer Students working for you!",
-    "description": "",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-50",
+    "title": "You created an ICOM committee for your museum!",
+    "description": "50 ICOM members have seceded to create an ICOM committee on behalf of your museum.",
+    "icon": "fa-user-friends",
+    "key": "achievement-workers-icom-50",
     "targetProperty": "hired",
-    "targetKey": "workers-summies",
+    "targetKey": "workers-icom",
     "threshold": 50
   },
   {
-    "title": "100 Summer Students working for you!",
-    "description": "",
+    "title": "All members of ICOM are working for you!",
+    "description": "Your museum is ICOM. The simpler, the better.",
     "icon": "fa-users",
-    "key": "achievement-workers-summies-100",
+    "key": "achievement-workers-icom-100",
     "targetProperty": "hired",
-    "targetKey": "workers-summies",
+    "targetKey": "workers-icom",
     "threshold": 100
   },
   {
     "title": "Your first artwork!",
     "description": "\"We have to start with something!\", dixit Dominique Vivant Denon one day.",
-    "icon": "fa-hand-o-up",
+    "icon": "fa-paint-brush",
     "key": "achievement-artworks-1",
     "threshold": 1,
     "targetKey": "museum",
     "targetProperty": "artworks"
   },
   {
-    "title": "100 artworks!",
-    "description": "We're going to save time and buy the neighbor’s closets. There must be things that can be studied and exposed.",
-    "icon": "fa-hand-o-up",
+    "title": "100 artworks in your museum!",
+    "description": "You bought the closet from the neighbor and found things that could be studied and exhibited.",
+    "icon": "fa-palette",
     "key": "achievement-artworks-100",
     "targetProperty": "artworks",
     "targetKey": "museum",
     "threshold": 100
   },
   {
-    "title": "1k artworks!",
+    "title": "1k souvenirs!",
     "description": "Napoleon has just returned from his extended weekend in Italy. He brought you some knick-knacks.",
-    "icon": "fa-hand-o-up",
+    "icon": "fa-paint-roller",
     "key": "achievement-artworks-1k",
     "targetProperty": "artworks",
     "targetKey": "museum",
@@ -883,8 +883,8 @@
   },
   {
     "title": "10k artworks!",
-    "description": "",
-    "icon": "fa-hand-o-up",
+    "description": "The serious things begin: we have to buy nails and display cases.",
+    "icon": "fa-spray-can",
     "key": "achievement-artworks-10k",
     "targetProperty": "artworks",
     "targetKey": "museum",
@@ -893,7 +893,7 @@
   {
     "title": "100k artworks!",
     "description": "",
-    "icon": "fa-hand-o-up",
+    "icon": "fa-magic",
     "key": "achievement-artworks-100k",
     "targetProperty": "artworks",
     "targetKey": "museum",
@@ -902,7 +902,7 @@
   {
     "title": "1M artworks!",
     "description": "",
-    "icon": "fa-hand-o-up",
+    "icon": "fa-industry",
     "key": "achievement-artworks-1M",
     "targetProperty": "artworks",
     "targetKey": "museum",
