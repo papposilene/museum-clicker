@@ -17,51 +17,42 @@
     <link rel="apple-touch-icon" href="assets/mobile/icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/mobile/icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <!-- Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    </script>
-    <!-- End Google Analytics -->
   </head>
   <body>
-	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-	  <a class="navbar-brand" href="#" data-toggle="modal" data-target="#myModal"> Museum Clicker</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <a class="navbar-brand" href="#"> Museum Clicker</a>
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-		  <ul class="navbar-nav mr-auto">
+	</button>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-			  <a href="#" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a>
+			  <a href="#" class="nav-link" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a>
 			</li>
 			<li class="nav-item">
-			  <a href="#" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a>
+			  <a href="#" class="nav-link" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a>
 			</li>
 			<li class="nav-item dropdown" ng-controller="SaveController">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-save"></i> Saved: <span ng-cloak>{{ lastSaved | date : 'H:mm' }}</span> <span class="caret"></span></a>
-                <div class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-item"><a href="#" ng-click="restart()"><i class="fas fa-sync"></i> Restart</a></li>
-                </div>
-              </li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i> About</a></li>
-		  </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://github.com/papposilene/museum-clicker/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-share-alt"></i> Social<span class="caret"></span></a>
-              <div class="dropdown-menu">
-                <li class="dropdown-item"><a href="https://twitter.com/papposilene"><i class="fab fa-twitter"></i> Twitter</a></li>
-              </div>
-            </li>
-          </ul>
-        </div>
-	  </nav>
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-save"></i> Saved: <span ng-cloak>{{ lastSaved | date : 'H:mm' }}</span> <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <li class="dropdown-item"><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-item"><a href="#" ng-click="restart()"><i class="fas fa-sync"></i> Restart</a></li>
+            </div>
+          </li>
+          <li><a href="#" class="nav-link" data-toggle="modal" data-target="#about-modal"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/papposilene/museum-clicker/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-share-alt"></i> Social<span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <li class="dropdown-item"><a href="https://twitter.com/papposilene"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div id="main-content" class="container-fluid col-no-padding">
       <div class="col-md-3 col-md-3s col-lg-2 col-no-padding visible-md-block visible-lg-block">
@@ -109,6 +100,11 @@
         <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fas fa-info"></i></button>
         <div class="row status" ng-cloak>
           <div class="col-xs-4 text-center col-no-padding-xs">
+            <strong>Ticket Office</strong><br>
+            {{ mc.museum.state.money | currency }}
+            <div class="update-value" id="update-cashflow"></div>
+          </div>
+          <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Artworks</strong><br>
             {{ mc.museum.state.artwork | niceNumber }}
             <div class="update-value" id="update-artwork"></div>
@@ -117,11 +113,6 @@
             <strong>Reputation</strong><br>
             {{ mc.museum.state.reputation | niceNumber }}
             <div class="update-value" id="update-reputation"></div>
-          </div>
-          <div class="col-xs-4 text-center col-no-padding-xs">
-            <strong>Ticket Office</strong><br>
-            {{ mc.museum.state.money | currency }}
-            <div class="update-value" id="update-cashflow"></div>
           </div>
         </div>
       </div>
@@ -229,7 +220,7 @@
     </div>
 
     <div class="modal fade" id="stats-modal" tabindex="-1" role="dialog" aria-labelledby="stats-label" aria-hidden="true" ng-controller="StatsController">
-      <div class="modal-dialog">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -238,8 +229,8 @@
           <div class="modal-body">
             <ul class="list-group">
               <li class="list-group-item"><i class="fa fa-location-arrow"></i> : <strong>{{ museum.state.clicks | niceNumber }}</strong></li>
-              <li class="list-group-item"><i class="fa fa-database"></i> : <strong>{{ museum.state.dataSpent | niceNumber }}</strong> used / <strong>{{ museum.state.dataCollected | niceNumber }}</strong> collected</li>
               <li class="list-group-item"><i class="fa fa-money"></i> : <strong>{{ museum.state.moneySpent | niceNumber }}</strong> spent / <strong>{{ museum.state.moneyCollected | niceNumber }}</strong> gathered</li>
+              <li class="list-group-item"><i class="fa fa-database"></i> : <strong>{{ museum.state.artworkSpent | niceNumber }}</strong> used / <strong>{{ museum.state.artworkCollected | niceNumber }}</strong> collected</li>
             </ul>
           </div>
         </div>
@@ -255,8 +246,8 @@
       </div>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
