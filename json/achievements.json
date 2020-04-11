@@ -11,7 +11,7 @@
   {
     "title": "Greek colonisation!",
     "description": "These immigrants come to bring us civilization and their panoply of women representing the Arts.",
-    "icon": "fa-ship",
+    "icon": "fa-cogs",
     "key": "achievement-collection-greece-roma-1",
     "threshold": 1,
     "targetKey": "collection-greece-roma",
@@ -20,7 +20,7 @@
   {
     "title": "Opening of the mouth ceremony!",
     "description": "As long as it is wine (in a Nagada vase).",
-    "icon": "fa-ankh",
+    "icon": "fa-cogs",
     "key": "achievement-collection-egypt-1",
     "threshold": 1,
     "targetKey": "collection-egypt",
@@ -523,7 +523,7 @@
   },
   {
     "title": "The first postdoc hired!",
-    "description": "",
+    "description": "All your research are belong to us",
     "icon": "fa-user",
     "key": "achievement-workers-postdocs-1",
     "threshold": 1,
@@ -532,8 +532,8 @@
   },
   {
     "title": "The first research fellow hired!",
-    "description": "",
-    "icon": "fa-user",
+    "description": "All your art theory are belong to us",
+    "icon": "fa-square-root-alt",
     "key": "achievement-workers-fellows-1",
     "threshold": 1,
     "targetKey": "workers-fellows",
@@ -541,8 +541,8 @@
   },
   {
     "title": "The first art historian hired!",
-    "description": "His personal library becomes yours!",
-    "icon": "fa-user",
+    "description": "All your library are belong to us!",
+    "icon": "fa-book",
     "key": "achievement-workers-arthistorians-1",
     "threshold": 1,
     "targetKey": "workers-arthistorians",
@@ -550,8 +550,8 @@
   },
   {
     "title": "The first permanent staff hired!",
-    "description": "",
-    "icon": "fa-user",
+    "description": "All your coffee maker are belong to us",
+    "icon": "fa-coffee",
     "key": "achievement-workers-permanent-1",
     "threshold": 1,
     "targetKey": "workers-permanent",
@@ -560,7 +560,7 @@
   {
     "title": "The first ICOM member hired!",
     "description": "The art world is almost yours!",
-    "icon": "fa-user",
+    "icon": "fa-globe",
     "key": "achievement-workers-icom-1",
     "threshold": 1,
     "targetKey": "workers-icom",
@@ -568,8 +568,8 @@
   },
   {
     "title": "5 Master Students working for you!",
-    "description": "",
-    "icon": "fa-users",
+    "description": "My first permanent team, made up of interchangeable and unpaid people.",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-masterstudents-5",
     "targetProperty": "hired",
     "targetKey": "workers-masterstudents",
@@ -577,8 +577,8 @@
   },
   {
     "title": "25 Master Students working for you!",
-    "description": "",
-    "icon": "fa-users",
+    "description": "Fordism in the art world.",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-masterstudents-25",
     "targetProperty": "hired",
     "targetKey": "workers-masterstudents",
@@ -587,7 +587,7 @@
   {
     "title": "50 Master Students working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-masterstudents-50",
     "targetProperty": "hired",
     "targetKey": "workers-masterstudents",
@@ -595,8 +595,8 @@
   },
   {
     "title": "100 Master Students working for you!",
-    "description": "",
-    "icon": "fa-users",
+    "description": "The whole art history university is working at the museum.",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-masterstudents-100",
     "targetProperty": "hired",
     "targetKey": "workers-masterstudents",
@@ -605,7 +605,7 @@
   {
     "title": "5 PhD Students working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-phdstudents-5",
     "targetProperty": "hired",
     "targetKey": "workers-phdstudents",
@@ -614,7 +614,7 @@
   {
     "title": "25 PhD Students working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-phdstudents-25",
     "targetProperty": "hired",
     "targetKey": "workers-phdstudents",
@@ -623,7 +623,7 @@
   {
     "title": "50 PhD Students working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-phdstudents-50",
     "targetProperty": "hired",
     "targetKey": "workers-phdstudents",
@@ -632,7 +632,7 @@
   {
     "title": "100 PhD Students working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-user-graduate",
     "key": "achievement-workers-phdstudents-100",
     "targetProperty": "hired",
     "targetKey": "workers-phdstudents",
@@ -641,7 +641,7 @@
   {
     "title": "5 Postdocs working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-graduation-cap",
     "key": "achievement-workers-postdocs-5",
     "targetProperty": "hired",
     "targetKey": "workers-postdocs",
@@ -650,7 +650,7 @@
   {
     "title": "25 Postdocs working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-graduation-cap",
     "key": "achievement-workers-postdocs-25",
     "targetProperty": "hired",
     "targetKey": "workers-postdocs",
@@ -659,7 +659,7 @@
   {
     "title": "50 Postdocs working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-graduation-cap",
     "key": "achievement-workers-postdocs-50",
     "targetProperty": "hired",
     "targetKey": "workers-postdocs",
@@ -668,7 +668,7 @@
   {
     "title": "100 Postdocs working for you!",
     "description": "",
-    "icon": "fa-users",
+    "icon": "fa-graduation-cap",
     "key": "achievement-workers-postdocs-100",
     "targetProperty": "hired",
     "targetKey": "workers-postdocs",
@@ -747,44 +747,44 @@
     "threshold": 100
   },
   {
-    "title": "5 Tenured Professors working for you!",
+    "title": "5 Art Historians working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-profs-5",
+    "key": "achievement-workers-arthistorians-5",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-arthistorians",
     "threshold": 5
   },
   {
-    "title": "25 Tenured Professors working for you!",
+    "title": "25 Art Historians working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-profs-25",
+    "key": "achievement-workers-arthistorians-25",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-arthistorians",
     "threshold": 25
   },
   {
-    "title": "50 Tenured Professors working for you!",
+    "title": "50 Art Historians working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-profs-50",
+    "key": "achievement-workers-arthistorians-50",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-arthistorians",
     "threshold": 50
   },
   {
-    "title": "100 Tenured Professors working for you!",
+    "title": "100 Art Historians working for you!",
     "description": "",
     "icon": "fa-users",
-    "key": "achievement-workers-profs-100",
+    "key": "achievement-workers-arthistorians-100",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-arthistorians",
     "threshold": 100
   },
   {
-    "title": "5 Nobel Laureates working for you!",
-    "description": "",
+    "title": "5 Permanent Staff working for you!",
+    "description": "The Secretariat Department is fully functional.",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-5",
     "targetProperty": "hired",
@@ -792,8 +792,8 @@
     "threshold": 5
   },
   {
-    "title": "25 Nobel Laureates working for you!",
-    "description": "",
+    "title": "25 Permanent Staff working for you!",
+    "description": "The Technical Team Department has been created and is fully functional.",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-25",
     "targetProperty": "hired",
@@ -801,8 +801,8 @@
     "threshold": 25
   },
   {
-    "title": "50 Nobel Laureates working for you!",
-    "description": "",
+    "title": "50 Permanent Staff working for you!",
+    "description": "Each conservation department has been created and is fully functional.",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-50",
     "targetProperty": "hired",
@@ -810,8 +810,8 @@
     "threshold": 50
   },
   {
-    "title": "100 Nobel Laureates working for you!",
-    "description": "",
+    "title": "100 Permanent Staff working for you!",
+    "description": "It is no longer a museum, but a veritable anthill.",
     "icon": "fa-users",
     "key": "achievement-workers-permanent-100",
     "targetProperty": "hired",
@@ -819,7 +819,7 @@
     "threshold": 100
   },
   {
-    "title": "5 ICOM student members!",
+    "title": "5 ICOM students members working for you!",
     "description": "It's museumslavery with extra steps.",
     "icon": "fa-user",
     "key": "achievement-workers-icom-5",
@@ -828,7 +828,7 @@
     "threshold": 5
   },
   {
-    "title": "25 ICOFOM members are working for you!",
+    "title": "25 ICOFOM members working for you!",
     "description": "What is museology? Let's have a meeting to invent it.",
     "icon": "fa-user-friends",
     "key": "achievement-workers-icom-25",
@@ -846,7 +846,7 @@
     "threshold": 50
   },
   {
-    "title": "All members of ICOM are working for you!",
+    "title": "All members of ICOM working for you!",
     "description": "Your museum is ICOM. The simpler, the better.",
     "icon": "fa-users",
     "key": "achievement-workers-icom-100",
@@ -1046,7 +1046,7 @@
   {
     "title": "100 MuseuMoney spent!",
     "description": "You had the first visit guides printed with the benefits of the ticket office.",
-    "icon": "fa-book",
+    "icon": "fa-hand-holding-usd",
     "key": "achievement-museumoney-spent-100",
     "targetProperty": "moneySpent",
     "targetKey": "museum",
@@ -1054,7 +1054,7 @@
   },
   {
     "title": "10k MuseuMoney spent!",
-    "description": "Don't forget to thank the generous sponsor for the check which allows you to buy new artworks and which will allow him to benefit from a nice tax reduction.",
+    "description": "Do not forget to thank the generous sponsor for the check which allows you to buy new artworks and which will allow him to benefit from a nice tax reduction.",
     "icon": "fa-money-check-alt",
     "key": "achievement-museumoney-spent-10k",
     "targetProperty": "moneySpent",
