@@ -167,7 +167,7 @@
                 <li class="media" ng-show="false"></li>
                 <li class="media" ng-repeat="u in uc.upgrades" ng-show="uc.isVisible(u)">
                   <div class="media-body">
-                    <h4 class="media-heading"><i class="fa {{ u.icon }} media-object"></i> {{ u.name }}</h4>
+                    <h4 class="media-heading"><i class="fas {{ u.icon }} media-object"></i> {{ u.name }}</h4>
                     <p>{{ u.description }}</p>
                     <p class="small">{{ u.effect }}</p>
                     <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="far fa-money-bill-alt"></i> <small>{{ u.cost | currency }}</small></button>
