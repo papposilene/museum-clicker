@@ -13,12 +13,12 @@
     }
   },
   {
-    "key": "collection-greece",
-    "name": "Art of ancient Greece",
-    "description": "Department of Greek Art (including Grecomania from Ancient Rome)",
+    "key": "collection-greece-roma",
+    "name": "Art of ancient Greece and Roman Empire",
+    "description": "Department of Greek Art, including Grecomania from Ancient Rome",
     "cost_increase": 1.7,
     "image": "assets/icons/png/036-venus.png",
-    "info": "html/ancient-greece.html",
+    "info": "html/ancient-greece-roman-empire.html",
     "state": {
       "reputation": 6e0,
       "cost": 4e2,
@@ -91,12 +91,12 @@
     }
   },
   {
-    "key": "collection-boscillations",
-    "name": "",
+    "key": "collection-modern",
+    "name": "Modern art",
     "description": "",
     "cost_increase": 1.25,
-    "image": "assets/icons/png/BBbar.png",
-    "info": "html/BBbar.html",
+    "image": "assets/icons/png/031-mirror.png",
+    "info": "html/modern-art.html",
     "state": {
       "reputation": 1.6e5,
       "cost": 9e8,
@@ -104,12 +104,12 @@
     }
   },
   {
-    "key": "collection-higgs",
+    "key": "collection-ecomuseum",
     "name": "",
-    "description": "",
+    "description": "Smells like cow's shit in the museum shop...",
     "cost_increase": 1.2,
-    "image": "assets/icons/png/H.png",
-    "info": "html/H.html",
+    "image": "assets/icons/png/011-ax.png",
+    "info": "html/ecomuseum.html",
     "state": {
       "reputation": 9e5,
       "cost": 5e9,
@@ -117,12 +117,12 @@
     }
   },
   {
-    "key": "collection-dstars",
-    "name": "",
+    "key": "collection-contemporary",
+    "name": "Contemporary art",
     "description": "",
     "cost_increase": 1.15,
-    "image": "assets/icons/png/Dstar_s.png",
-    "info": "html/Dstar_s.html",
+    "image": "assets/icons/png/030-fire-extinguisher.png",
+    "info": "html/contemporary-art.html",
     "state": {
       "reputation": 4.75e6,
       "cost": 2.4e10,
@@ -130,12 +130,12 @@
     }
   },
   {
-    "key": "collection-xib",
-    "name": "",
-    "description": "",
+    "key": "collection-post",
+    "name": "Post-everything art",
+    "description": "Post-Donald Kuspit, and beyond the end of Art...",
     "cost_increase": 1.15,
-    "image": "assets/icons/png/Xi_b.png",
-    "info": "html/Xi_b.html",
+    "image": "assets/icons/png/029-laurel.png",
+    "info": "html/post-art.html",
     "state": {
       "reputation": 2.5e7,
       "cost": 9e10,
