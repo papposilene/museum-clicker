@@ -10,7 +10,7 @@
     <meta property="og:description" content="An addictive incremental game that was made during the 2020 Covid-19 Lockdown, forked from the CERN Webfest 2014. It takes the player on a historic journey through museum's collections.">
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/8345868">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     
     <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -19,20 +19,20 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#"> Museum Clicker</a>
-    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-			  <a href="#" class="nav-link" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a>
-			</li>
-			<li class="nav-item">
-			  <a href="#" class="nav-link" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a>
-			</li>
-			<li class="nav-item dropdown" ng-controller="SaveController">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#achievements-modal"><i class="fas fa-trophy"></i> Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#stats-modal"><i class="fas fa-chart-bar"></i> Statistics</a>
+          </li>
+          <li class="nav-item dropdown" ng-controller="SaveController">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-save"></i> Saved: <span ng-cloak>{{ lastSaved | date : 'H:mm' }}</span> <span class="caret"></span></a>
             <div class="dropdown-menu">
               <li class="dropdown-item"><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
@@ -40,10 +40,14 @@
               <li class="dropdown-item"><a href="#" ng-click="restart()"><i class="fas fa-sync"></i> Restart</a></li>
             </div>
           </li>
-          <li><a href="#" class="nav-link" data-toggle="modal" data-target="#about-modal"><i class="fas fa-info-circle"></i> About</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#about-modal"><i class="fas fa-info-circle"></i> About</a>
+          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/papposilene/museum-clicker/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="https://github.com/papposilene/museum-clicker/" class="nav-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-share-alt"></i> Social<span class="caret"></span></a>
             <div class="dropdown-menu">
@@ -59,7 +63,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <i class="fas fa-university"></i> Collection
+              <i class="fas fa-university"></i> Curatorial Departments
             </h4>
           </div>
           <div class="panel-body scrollable large" id="collectionLarge" ng-controller="CollectionController as cc">
@@ -287,7 +291,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="//use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="js/external/jquery.cookie-1.4.1.min.js"></script>
     <script src="js/external/retina.js"></script>
