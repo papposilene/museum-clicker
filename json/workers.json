@@ -1,6 +1,6 @@
 [
   {
-    "key": "curators-connoisseurs",
+    "key": "workers-connoisseurs",
     "name": "Connoisseur",
     "description": "Their best ideas come from their omniscient intuition.",
     "cost_increase": 1.5,
@@ -10,7 +10,7 @@
     }
   },
   {
-    "key": "curators-masterstudents",
+    "key": "workers-masterstudents",
     "name": "Master Students",
     "description": "Cheap and enthusiastic workforce, they can save you a lot of work.",
     "cost_increase": 1.45,
@@ -20,7 +20,7 @@
     }
   },
   {
-    "key": "curators-phdstudents",
+    "key": "workers-phdstudents",
     "name": "PhD Students",
     "description": "They decided to do a PhD. Now they are working hard.",
     "cost_increase": 1.4,
@@ -30,7 +30,7 @@
     }
   },
   {
-    "key": "curators-postdocs",
+    "key": "workers-postdocs",
     "name": "Postdocs",
     "description": "These brilliant minds are here only to serve your needs.",
 	"cost_increase": 1.35,
@@ -40,7 +40,7 @@
     }
   },
   {
-    "key": "curators-fellows",
+    "key": "workers-fellows",
     "name": "Research Fellows",
     "description": "You pay them a lot. They work a lot.",
     "cost_increase": 1.3,
@@ -50,7 +50,7 @@
     }
   },
   {
-    "key": "curators-arthistorians",
+    "key": "workers-arthistorians",
     "name": "Art Historians",
     "description": "They bring their own library along and are able to get a lot of work done.",
     "cost_increase": 1.25,
@@ -60,7 +60,7 @@
     }
   },
   {
-    "key": "curators-permanent",
+    "key": "workers-permanent",
     "name": "Permanent Staff",
     "description": "Somebody who gets a permanent position in a museum has to be good.",
     "cost_increase": 1.2,
@@ -70,7 +70,7 @@
     }
   },
   {
-    "key": "curators-icom",
+    "key": "workers-icom",
     "name": "ICOM Board Members",
     "description": "They received their position for a reason...",
     "cost_increase": 1.15,
