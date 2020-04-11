@@ -49,7 +49,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#" ng-click="saveNow()"><i class="fas fa-save"></i> Save now</a></li>
                 <li class="divider"></li>
-                <li><a href="#" ng-click="restart()"><i class="fas fa-refresh"></i> Restart</a></li>
+                <li><a href="#" ng-click="restart()"><i class="fas fa-sync-alt"></i> Restart</a></li>
               </ul>
             </li>
             <li><a href="#" data-toggle="modal" data-target="#about-modal"><i class="fas fa-info-circle"></i> About</a></li>
@@ -225,13 +225,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="stats-label"><i class="fa fa-bar-chart"></i> Statistics</h4>
+            <h4 class="modal-title" id="stats-label"><i class="fa fa-chart-bar"></i> Statistics</h4>
           </div>
           <div class="modal-body">
             <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-location-arrow"></i> : <strong>{{ museum.state.clicks | niceNumber }}</strong></li>
-              <li class="list-group-item"><i class="fa fa-money"></i> : <strong>{{ museum.state.moneySpent | niceNumber }}</strong> spent / <strong>{{ museum.state.moneyCollected | niceNumber }}</strong> gathered</li>
-              <li class="list-group-item"><i class="fa fa-database"></i> : <strong>{{ museum.state.artworkSpent | niceNumber }}</strong> used / <strong>{{ museum.state.artworkCollected | niceNumber }}</strong> collected</li>
+              <li class="list-group-item"><i class="fas fa-location-arrow"></i> : <strong>{{ museum.state.clicks | niceNumber }}</strong></li>
+              <li class="list-group-item"><i class="far fa-money-bill-alt"></i> : <strong>{{ museum.state.moneySpent | niceNumber }}</strong> spent / <strong>{{ museum.state.moneyCollected | niceNumber }}</strong> gathered</li>
+              <li class="list-group-item"><i class="fas fa-university"></i> : <strong>{{ museum.state.artworkSpent | niceNumber }}</strong> used / <strong>{{ museum.state.artworkCollected | niceNumber }}</strong> collected</li>
             </ul>
           </div>
         </div>
