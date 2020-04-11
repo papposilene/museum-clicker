@@ -20,7 +20,7 @@ var Game = (function() {
     // However, I don't see any other reasonable way to do this in order to
     // make it work with Angular. If you know a way, let me know, and I'll
     // give you a beer. - Kevin
-    this.collection = Helpers.loadFile('json/collection.json');
+    this.collection = Helpers.loadFile('json/collections.json');
     this.workers = Helpers.loadFile('json/workers.json');
     this.upgrades = Helpers.loadFile('json/upgrades.json');
     this.achievements = Helpers.loadFile('json/achievements.json');
@@ -35,7 +35,7 @@ var Game = (function() {
       return o;
     };
     this.collection = this.collection.map(
-        function(r) { return makeGameObject(GameObjects.Collection, r); });
+        function(c) { return makeGameObject(GameObjects.Collection, c); });
     this.workers = this.workers.map(
         function(w) { return makeGameObject(GameObjects.Worker, w); });
     this.upgrades = this.upgrades.map(
