@@ -11,7 +11,7 @@
   {
     "title": "Greek colonisation!",
     "description": "These immigrants come to bring us civilization and their panoply of women representing the Arts.",
-    "icon": "fa-cogs",
+    "icon": "fa-ship",
     "key": "achievement-collection-greece-roma-1",
     "threshold": 1,
     "targetKey": "collection-greece-roma",
@@ -20,7 +20,7 @@
   {
     "title": "Opening of the mouth ceremony!",
     "description": "As long as it is wine (in a Nagada vase).",
-    "icon": "fa-cogs",
+    "icon": "fa-ankh",
     "key": "achievement-collection-egypt-1",
     "threshold": 1,
     "targetKey": "collection-egypt",
