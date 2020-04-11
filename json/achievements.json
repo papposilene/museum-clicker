@@ -848,7 +848,7 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 MuseumMoney gathered (despite our non-profit goal ¯\_(ツ)_/¯)!",
+    "description": "100 MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
     "icon": "fa-money",
     "key": "achievement-museumoney-collected-100",
     "targetProperty": "moneyCollected",
@@ -856,7 +856,7 @@
     "threshold": 100
   },
   {
-    "description": "10k MuseumMoney gathered (despite our non-profit goal ¯\_(ツ)_/¯)!",
+    "description": "10k MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
     "icon": "fa-money",
     "key": "achievement-museumoney-collected-10k",
     "targetProperty": "moneyCollected",
@@ -864,7 +864,7 @@
     "threshold": 10000
   },
   {
-    "description": "1M MuseumMoney gathered (despite our non-profit goal ¯\_(ツ)_/¯)!",
+    "description": "1M MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
     "icon": "fa-money",
     "key": "achievement-museumoney-cgollected-1M",
     "targetProperty": "moneyCollected",
@@ -872,7 +872,7 @@
     "threshold": 1000000
   },
   {
-    "description": "100M MuseumMoney gathered (despite our non-profit goal ¯\_(ツ)_/¯)!",
+    "description": "100M MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
     "icon": "fa-money",
     "key": "achievement-museumoney-collected-100M",
     "targetProperty": "moneyCollected",
@@ -880,7 +880,7 @@
     "threshold": 100000000
   },
   {
-    "description": "10G MuseumMoney gathered (despite our non-profit goal ¯\_(ツ)_/¯)!",
+    "description": "10G MuseumMoney gathered (despite our non-profit goal ¯\\_(ツ)_/¯)!",
     "icon": "fa-money",
     "key": "achievement-museumoney-collected-10G",
     "targetProperty": "moneyCollected",
