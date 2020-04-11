@@ -1054,7 +1054,7 @@
   },
   {
     "title": "10k MuseuMoney spent!",
-    "description": "Do not forget to thank the generous sponsor for the check which allows you to buy new artworks and which will allow him to benefit from a nice tax reduction.",
+    "description": "Don't forget to thank the generous sponsor for the check which allows you to buy new artworks and which will allow him to benefit from a nice tax reduction.",
     "icon": "fa-money-check-alt",
     "key": "achievement-museumoney-spent-10k",
     "targetProperty": "moneySpent",
