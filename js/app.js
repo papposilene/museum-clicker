@@ -65,7 +65,7 @@
         sum += workers[i].state.hired * workers[i].state.rate;
       }
       if (sum > 0) {
-        museum.acquireData(sum);
+        museum.acquireArtwork(sum);
         UI.showUpdateValue("#update-artwork", sum);
         ticket.addEventExternal(workers.map(function(w) {
           return w.state.hired;
