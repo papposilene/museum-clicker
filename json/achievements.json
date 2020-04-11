@@ -955,7 +955,7 @@
   },
   {
     "title": "Ticket office",
-    "description": "You have 100 MuseumMoney in your ticket office.",
+    "description": "You have 100 MuseuMoney in your ticket office.",
     "icon": "fa-money-bill-alt",
     "key": "achievement-museumoney-collected-100",
     "targetProperty": "moneyCollected",
@@ -982,7 +982,7 @@
   },
   {
     "title": "Your museum tickets are the new Bitcoin.",
-    "description": "Despite your museum is a non-profit institution, you have taxed 100M MuseumMoney from our visitors. ¯\\_(ツ)_/¯",
+    "description": "Despite your museum is a non-profit institution, you have taxed 100M MuseuMoney from our visitors. ¯\\_(ツ)_/¯",
     "icon": "fa-btc",
     "key": "achievement-museumoney-collected-100M",
     "targetProperty": "moneyCollected",
@@ -991,7 +991,7 @@
   },
   {
     "title": "The art market is collapsing.",
-    "description": "With 10G MuseumMoney in your piggy bank, the art market has no interest in existing and collapses, taking with it all of the financial markets.",
+    "description": "With 10G MuseuMoney in your piggy bank, the art market has no interest in existing and collapses, taking with it all of the financial markets.",
     "icon": "fa-piggy-bank",
     "key": "achievement-museumoney-collected-10G",
     "targetProperty": "moneyCollected",
