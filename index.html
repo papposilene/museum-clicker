@@ -86,8 +86,8 @@
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
                     <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
-                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-cogs"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
-                    <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="fas {{ c.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>
+                      <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-university"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
+                    <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="{{ c.state.interesting ? 'fas fa-exclamation' : 'fas fa-info' }}"></i></button>
                   </div>
                   </div>
                 </li>
@@ -170,7 +170,7 @@
                     <h4 class="media-heading"><i class="fa {{ u.icon }} media-object"></i> {{ u.name }}</h4>
                     <p>{{ u.description }}</p>
                     <p class="small">{{ u.effect }}</p>
-                    <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="fa fa-money"></i> <small>{{ u.cost | currency }}</small></button>
+                    <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="far fa-money-bill-alt"></i> <small>{{ u.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
@@ -247,7 +247,7 @@
       </div>
     </div>
 
-    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-label" aria-hidden="true" ng-controller="AboutController">
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-label" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
