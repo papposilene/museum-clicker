@@ -123,7 +123,8 @@ var UI = (function () {
   var showAchievement = function(obj) {
     var alert = '<div class="alert alert-success alert-dismissible" role="alert">';
     alert += '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>';
-    alert += '<span class="fa ' + obj.icon + ' alert-glyph"></span> <span class="alert-text text-justify">' + obj.description + '</span>';
+    alert += '<h4 class="alert-heading"><span class="fa ' + obj.icon + ' alert-glyph"></span> <span class="alert-text">' + obj.title + '</span></h4>';
+    alert += '<p class="text-justify">' + obj.description + '</p>';
     alert += '</div>';
 
     alert = $(alert);
