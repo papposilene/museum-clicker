@@ -12,8 +12,8 @@
   },
   {
     "key": "upgrade-connoisseurs2",
-    "name": "Own desk",
-    "description": "Not having to share one is a blessing.",
+    "name": "Ecole du Louvre's diploma",
+    "description": "The Ecole du Louvre, a connoisseurs nursery since 1882...",
     "effect": "Connoisseurs assign twice as much artworks to artists per second.",
     "icon": "fa-desktop",
     "cost": 4e3,
