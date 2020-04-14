@@ -81,8 +81,8 @@
                 <li class="media" ng-repeat="c in cc.collection" ng-show="cc.isVisible(c)">
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <img ng-show="c.state.level > 0" class="collection-icon media-object float-left " ng-src="{{ c.image }}" height="48px" width="48px" alt="">
-                      <img ng-hide="c.state.level > 0" class="collection-icon media-object float-left" src="assets/icons/png/023-museum-map.png" height="48px" width="48px" alt="">
+                      <img ng-show="c.state.level > 0" class="collection-icon media-object float-left " ng-src="{{ c.image }}" height="32px" width="32px" alt="">
+                      <img ng-hide="c.state.level > 0" class="collection-icon media-object float-left" src="assets/icons/png/023-museum-map.png" height="32px" width="32px" alt="">
                       {{ c.state.level > 0 ? c.name : '?????' }}<br /><span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span>
                     </h4>
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
@@ -145,7 +145,7 @@
                 <li class="media" ng-repeat="w in hrc.workers" ng-show="hrc.isVisible(w)">
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <img class="collection-icon media-object float-left" src="assets/icons/png/013-staff.png" height="48px" width="48px" alt="">
+                      <img class="collection-icon media-object float-left" src="assets/icons/png/013-staff.png" height="32px" width="32px" alt="">
                       {{ w.name }}
                       <br /><span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span>
                     </h4>
