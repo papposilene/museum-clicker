@@ -3,7 +3,7 @@
     "key": "collection-coc",
     "name": "Wunderkammer",
     "description": "Let the plunder of Nature begin! ᕕ( ᐛ )ᕗ",
-    "cost_increase": 1.8,
+    "cost_increase": 2.2,
     "image": "assets/icons/png/024-dinosaur.png",
     "info": "html/wunderkammer.html",
     "state": {
@@ -13,12 +13,12 @@
     }
   },
   {
-    "key": "collection-greece-roma",
-    "name": "Art of ancient Greece and Roman Empire",
-    "description": "Department of Greek Art, including Grecomania from Ancient Rome",
-    "cost_increase": 1.7,
+    "key": "collection-greekart",
+    "name": "Department of Greek art",
+    "description": "Department of Greek Art",
+    "cost_increase": 2.1,
     "image": "assets/icons/png/036-venus.png",
-    "info": "html/ancient-greece-roman-empire.html",
+    "info": "html/ancient-greece.html",
     "state": {
       "reputation": 6e0,
       "cost": 4e2,
@@ -26,12 +26,12 @@
     }
   },
   {
-    "key": "collection-egypt",
-    "name": "Art of ancient Egypt",
-    "description": "The Art of ancient Egypt, and beyond...",
-    "cost_increase": 1.6,
-    "image": "assets/icons/png/020-sarcophagus.png",
-    "info": "html/ancient-egypt.html",
+    "key": "collection-romanart",
+    "name": "Department of Roman Art",
+    "description": "The Art of ancient Rome",
+    "cost_increase": 2,
+    "image": "assets/icons/png/029-laurel.png",
+    "info": "html/roman-art.html",
     "state": {
       "reputation": 3.3e1,
       "cost": 1e4,
@@ -39,12 +39,12 @@
     }
   },
   {
-    "key": "collection-national",
-    "name": "",
-    "description": "",
-    "cost_increase": 1.5,
-    "image": "assets/icons/png/b.png",
-    "info": "html/b.html",
+    "key": "collection-egyptianart",
+    "name": "Department of Egyptian Art",
+    "description": "The art of ancient Egypt, and beyond...",
+    "cost_increase": 1.9,
+    "image": "assets/icons/png/020-sarcophagus.png",
+    "info": "html/egyptian-art.html",
     "state": {
       "reputation": 1.85e2,
       "cost": 2e5,
@@ -52,12 +52,12 @@
     }
   },
     {
-    "key": "collection-gluons",
-    "name": "",
-    "description": "",
-    "cost_increase": 1.4,
-    "image": "assets/icons/png/gluons.png",
-    "info": "html/gluons.html",
+    "key": "collection-medievalart",
+    "name": "Department of Medieval Art",
+    "description": "From Byzantine art to Gothic art.",
+    "cost_increase": 1.8,
+    "image": "assets/icons/png/007-sword.png",
+    "info": "html/medieval-art.html",
     "state": {
       "reputation": 1e3,
       "cost": 3e6,
@@ -65,12 +65,12 @@
     }
   },
   {
-    "key": "collection-weak",
-    "name": "",
+    "key": "collection-islamicart",
+    "name": "Department of Islamic art",
     "description": "",
-    "cost_increase": 1.35,
-    "image": "assets/icons/png/weak.png",
-    "info": "html/weak.html",
+    "cost_increase": 1.7,
+    "image": "assets/icons/png/001-vase-1.png",
+    "info": "html/islamic-art.html",
     "state": {
       "reputation": 5.4e3,
       "cost": 3.2e7,
@@ -78,12 +78,12 @@
     }
   },
   {
-    "key": "collection-top",
-    "name": "",
-    "description": "",
-    "cost_increase": 1.3,
-    "image": "assets/icons/png/t.png",
-    "info": "html/top.html",
+    "key": "collection-renaissance",
+    "name": "Department of Renaissance art",
+    "description": "From italian Renaissance to Mannerism",
+    "cost_increase": 1.6,
+    "image": "assets/icons/png/050-gioconda.png",
+    "info": "html/renaissance-art.html",
     "state": {
       "reputation": 3e4,
       "cost": 1.28e8,
@@ -91,11 +91,11 @@
     }
   },
   {
-    "key": "collection-modern",
-    "name": "Modern art",
-    "description": "",
-    "cost_increase": 1.25,
-    "image": "assets/icons/png/031-mirror.png",
+    "key": "collection-moderntimes",
+    "name": "Department of Modern Times arts",
+    "description": "Baroque, Rococo and Neoclassicism",
+    "cost_increase": 1.5,
+    "image": "assets/icons/png/002-statue.png",
     "info": "html/modern-art.html",
     "state": {
       "reputation": 1.6e5,
@@ -104,12 +104,12 @@
     }
   },
   {
-    "key": "collection-ecomuseum",
-    "name": "",
-    "description": "Smells like cow's shit in the museum shop...",
-    "cost_increase": 1.2,
-    "image": "assets/icons/png/011-ax.png",
-    "info": "html/ecomuseum.html",
+    "key": "collection-asianart",
+    "name": "Department of Asian arts",
+    "description": "All the Oriental arts within sight: India, China, Japan, Southeast Asia and so more...",
+    "cost_increase": 1.4,
+    "image": "assets/icons/png/calligraphy.png",
+    "info": "html/asian-art.html",
     "state": {
       "reputation": 9e5,
       "cost": 5e9,
@@ -117,12 +117,12 @@
     }
   },
   {
-    "key": "collection-contemporary",
-    "name": "Contemporary art",
-    "description": "",
-    "cost_increase": 1.15,
-    "image": "assets/icons/png/030-fire-extinguisher.png",
-    "info": "html/contemporary-art.html",
+    "key": "collection-xixsiecleart",
+    "name": "Department of XIXe siecle arts",
+    "description": "Before that art, it was the good old days.",
+    "cost_increase": 1.35,
+    "image": "assets/icons/png/016-museum-1.png",
+    "info": "html/xixsiecle-art.html",
     "state": {
       "reputation": 4.75e6,
       "cost": 2.4e10,
@@ -130,15 +130,80 @@
     }
   },
   {
-    "key": "collection-post",
-    "name": "Post-everything art",
-    "description": "Post-Donald Kuspit, and beyond the end of Art...",
-    "cost_increase": 1.15,
-    "image": "assets/icons/png/029-laurel.png",
-    "info": "html/post-art.html",
+    "key": "collection-prehistoricart",
+    "name": "Department of Prehistoric art",
+    "description": "Flints, bones, and callipyges Venus.",
+    "cost_increase": 1.3,
+    "image": "assets/icons/png/011-ax.png",
+    "info": "html/prehistoric-art.html",
     "state": {
       "reputation": 2.5e7,
       "cost": 9e10,
+      "info_levels": [ 1 ]
+    }
+  },
+  {
+    "key": "collection-mesopotamianart",
+    "name": "Department of Mesopotamia",
+    "description": "The birth of the Arts",
+    "cost_increase": 1.25,
+    "image": "assets/icons/png/001-vase-2.png",
+    "info": "html/mesopotamian-art.html",
+    "state": {
+      "reputation": 4.53e7,
+      "cost": 9e10,
+      "info_levels": [ 1 ]
+    }
+  },
+  {
+    "key": "collection-modernart",
+    "name": "Department of Modern art",
+    "description": "An artist, a movement.",
+    "cost_increase": 1.2,
+    "image": "assets/icons/png/031-mirror.png",
+    "info": "html/modern-art.html",
+    "state": {
+      "reputation": 6.56e8,
+      "cost": 1.56e11,
+      "info_levels": [ 1 ]
+    }
+  },
+  {
+    "key": "collection-contemporaryart",
+    "name": "Department of Contemporary art",
+    "description": "Only artists, no more movements.",
+    "cost_increase": 1.15,
+    "image": "assets/icons/png/030-fire-extinguisher.png",
+    "info": "html/post-art.html",
+    "state": {
+      "reputation": 8.59e8,
+      "cost": 2.22e11,
+      "info_levels": [ 1 ]
+    }
+  },
+  {
+    "key": "collection-postmodernart",
+    "name": "Department of Postmodern art",
+    "description": "Post-Donald Kuspit, and beyond the end of Art...",
+    "cost_increase": 1.1,
+    "image": "assets/icons/png/029-laurel.png",
+    "info": "html/post-art.html",
+    "state": {
+      "reputation": 1.61e9,
+      "cost": 2.88e11,
+      "info_levels": [ 1 ]
+    }
+  },
+  {
+    "key": "collection-studies",
+    "name": "Department of New Issues",
+    "description": "Repatriation, feminism and gender studies",
+    "cost_increase": 1.05,
+    "image": "assets/icons/png/015-light.png",
+    "info": "html/studies.html",
+    "state": {
+      "reputation": 1e10,
+      "cost": 1e12,
       "info_levels": [ 1 ]
     }
   }
