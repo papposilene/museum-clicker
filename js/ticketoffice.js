@@ -60,17 +60,17 @@ var ticket =
     tracks:
     [
         {
-            name: 'electron',
+            name: 'visitor',
             color: '#0016EA'
         },
 
         {
-            name: 'jet',
+            name: 'acquisition',
             color: '#0B7700'
         },
         
         {
-            name: 'muon',
+            name: 'donation',
             color: '#775400'
         }
     ],
