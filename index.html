@@ -81,9 +81,9 @@
                 <li class="media" ng-repeat="c in cc.collection" ng-show="cc.isVisible(c)">
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <img ng-show="c.state.level > 0" class="research-icon media-object float-left " ng-src="{{ c.image }}" height="32px" width="32px" alt="">
-                      <img ng-hide="c.state.level > 0" class="research-icon media-object float-left" src="assets/icons/png/023-museum-map.png" height="32px" width="32px" alt="">
-                      {{ c.state.level > 0 ? c.name : '?????' }} <span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span>
+                      <img ng-show="c.state.level > 0" class="research-icon media-object float-left " ng-src="{{ c.image }}" height="48px" width="48px" alt="">
+                      <img ng-hide="c.state.level > 0" class="research-icon media-object float-left" src="assets/icons/png/023-museum-map.png" height="48px" width="48px" alt="">
+                      {{ c.state.level > 0 ? c.name : '?????' }}<br /><span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span>
                     </h4>
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
                     <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
