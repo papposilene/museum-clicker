@@ -134,7 +134,7 @@
     "name": "Department of Americas' arts",
     "description": "The art of the Americas, from the North Pole to the South Pole",
     "cost_increase": 1.45,
-    "image": "assets/icons/png/009-gate.png",
+    "image": "assets/icons/png/037-crown.png",
     "info": "html/american-art.html",
     "state": {
       "reputation": 4.75e6,
