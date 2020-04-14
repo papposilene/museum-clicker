@@ -2,7 +2,7 @@
   {
     "key": "collection-coc",
     "name": "Wunderkammer",
-    "description": "Let the plunder of Nature begin!<br />ᕕ( ᐛ )ᕗ",
+    "description": "Let the plunder of Nature begin! ᕕ( ᐛ )ᕗ",
     "cost_increase": 2.3,
     "image": "assets/icons/png/024-dinosaur.png",
     "info": "html/wunderkammer.html",
