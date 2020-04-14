@@ -145,11 +145,11 @@
                 <li class="media" ng-repeat="w in hrc.workers" ng-show="hrc.isVisible(w)">
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <img class="collection-icon media-object float-left" src="assets/icons/png/013-staff.png" height="32px" width="32px" alt="">
-                      {{ w.name }}
+                      <i class="fas fa-user-graduate"></i> {{ w.name }}
                       <br /><span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span>
                     </h4>
-                    <p ng-show="w.state.hired > 0">{{ w.description }}</p>
+                    <p ng-show="w.state.hired > 0">
+                      {{ w.description }}</p>
                     <p ng-show="w.state.hired > 0" class="small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
                     <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fas fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
