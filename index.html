@@ -233,11 +233,13 @@
             <p class="text-center"><strong>Progress</strong> <span class="label label-info">{{ progress() }} / {{ achievements.length }}</span></p>
             <ul class="list-group">
               <li class="list-group-item" ng-repeat="a in achievements | orderBy:'state.timeAchieved' | reverse" ng-show="a.isAchieved()">
-                <i class="fas {{ a.icon }}"></i> {{ a.title }}
+                <p>
+                  <i class="fas {{ a.icon }}"></i> {{ a.title }}
+                  <span class="badge">{{ a.state.timeAchieved | niceTime }}</span>
+                </p>
                 <p>
                   {{ a.description }}
                 </p>
-                <span class="badge">{{ a.state.timeAchieved | niceTime }}</span>
               </li>
             </ul>
           </div>
