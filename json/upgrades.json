@@ -524,9 +524,8 @@
     "requirements": [{ "key": "upgrade-acquisition11", "property": "used", "threshold": 1 }],
     "factor": 2
   },
-    "key": "upgrade-artworking1",
-
   {
+    "key": "upgrade-artworking1",
     "name": "L = 1×10³⁰ cm⁻²s⁻¹",
     "description": "Increased instantaneous the number of artworks in the museum.",
     "effect": "+3 artworks per click.",
@@ -736,7 +735,7 @@
       { "key": "collection-modernart", "property": "reputation" },
       { "key": "collection-contemporaryart", "property": "reputation" },
       { "key": "collection-postmodernart", "property": "reputation" },
-	  { "key": "collection-studies", "property": "reputation" },
+	  { "key": "collection-studies", "property": "reputation" }
     ],
     "requirements": [
       { "key": "collection-coc", "property": "level", "threshold": 1 },
