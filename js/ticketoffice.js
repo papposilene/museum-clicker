@@ -145,122 +145,12 @@ var ticket =
         var ctx = ticket.core.ctx;
         var cx = ticket.width / 2;
         var cy = ticket.height / 2;
-
-        ctx.clearRect(0, 0, ticket.width, ticket.width);
-
-        var muSplit = 2/12;
-        for (var k = 3; k >= 1; k--) {
-            ctx.strokeStyle = ticket.colors.mucalDarkLine;
-            ctx.fillStyle = ticket.colors.mucalDark;
-            
-            ctx.beginPath();
-            ctx.moveTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.sin(Math.PI * muSplit) * ticket.ratio);
-            for (var i = 1; i <= 13; i++) {
-                ctx.lineTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + k * ticket.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
-            }
-            ctx.stroke();
-            ctx.fill();
-
-            ctx.beginPath();
-            ctx.moveTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.sin(Math.PI * muSplit) * ticket.ratio);
-            for (var i = 1; i <= 13; i++) {
-                ctx.lineTo(cx + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + (ticket.radius.mucal + k * ticket.radius.mucalLight + (k-1) * ticket.radius.mucalDark) * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
-            }
-            ctx.stroke();
-            ctx.fillStyle = ticket.colors.mucalLight;
-            ctx.fill();
+        var img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0);
         }
+        img.src = "assets/icons/svg/006-ticket.svg";
 
-        ctx.strokeStyle = ticket.colors.mucalDarkLine;
-        ctx.beginPath();
-        ctx.moveTo(cx + ticket.radius.mucal * Math.cos(Math.PI * muSplit) * ticket.ratio, cy + ticket.radius.mucal * Math.sin(Math.PI * muSplit) * ticket.ratio);
-        for (var i = 1; i <= 13; i++) {
-            ctx.lineTo(cx + ticket.radius.mucal * Math.cos(Math.PI * i * muSplit) * ticket.ratio, cy + ticket.radius.mucal * Math.sin(Math.PI * i * muSplit) * ticket.ratio);
-        }
-        ctx.stroke();
-        ctx.fillStyle = '#FFFFFF';
-        ctx.fill();
-
-
-        ctx.beginPath();
-        ctx.strokeStyle = ticket.colors.darkRingLine;
-        ctx.fillStyle = ticket.colors.darkRing;
-        ctx.arc(cx, cy, ticket.radius.darkRing2 * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, ticket.radius.lightRingSpace * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-
-        ctx.beginPath();
-        ctx.strokeStyle = ticket.colors.lightRingLine;
-        ctx.fillStyle = ticket.colors.lightRing;
-        ctx.arc(cx, cy, ticket.radius.lightRing * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, ticket.radius.darkRing1Space * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-
-        ctx.beginPath();
-        ctx.strokeStyle = ticket.colors.darkRingLine
-        ctx.fillStyle = ticket.colors.darkRing;
-        ctx.arc(cx, cy, ticket.radius.darkRing1 * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.fillStyle = '#FFFFFF';
-        ctx.arc(cx, cy, ticket.radius.ecal * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-
-
-        ctx.strokeStyle = ticket.colors.hcalLine;
-        ctx.fillStyle = ticket.colors.hcal;
-        var calSplit = 20/2;
-        for (var i = 0; i < 20; i++) {
-            ctx.beginPath();
-            ctx.moveTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
-            ctx.lineTo(cx + ticket.radius.hcal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.hcal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
-            ctx.arc(cx, cy, ticket.radius.hcal * ticket.ratio, Math.PI * i / calSplit, Math.PI * (i+1) / calSplit, false);
-            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
-            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
-            ctx.closePath();
-            ctx.fill();
-            ctx.stroke();
-        }
-
-        ctx.strokeStyle = ticket.colors.ecalLine;
-        ctx.fillStyle = ticket.colors.ecal;
-        var calSplit = 20/2;
-        for (var i = 0; i < 20; i++) {
-            ctx.beginPath();
-            ctx.moveTo(cx + ticket.radius.siliconSpace * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.siliconSpace * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
-            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * i / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * i / calSplit) * ticket.ratio);
-            ctx.lineTo(cx + ticket.radius.ecal * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.ecal * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
-            ctx.lineTo(cx + ticket.radius.siliconSpace * Math.cos(Math.PI * (i+1) / calSplit) * ticket.ratio, cy + ticket.radius.siliconSpace * Math.sin(Math.PI * (i+1) / calSplit) * ticket.ratio);
-            ctx.closePath();
-            ctx.fill();
-            ctx.stroke();
-        }
-
-        ctx.beginPath();
-        ctx.strokeStyle = ticket.colors.siliconRingLine;
-        ctx.fillStyle = ticket.colors.siliconRing;
-        ctx.arc(cx, cy, ticket.radius.silicon * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.strokeStyle = ticket.colors.siliconRingLine;
-        ctx.fillStyle = ticket.colors.siliconRing;
-        ctx.arc(cx, cy, ticket.radius.siliconInner * ticket.ratio, 0, Math.PI * 2, true);
-        ctx.fill();
-        ctx.stroke();
     },
 
     addEvent: function()
