@@ -132,10 +132,10 @@
   {
     "key": "collection-americas",
     "name": "Department of Americas' arts",
-    "description": "The Art of Africa: mask art and magic of arts.",
+    "description": "The art of the Americas, from the North Pole to the South Pole",
     "cost_increase": 1.45,
     "image": "assets/icons/png/009-gate.png",
-    "info": "html/america-art.html",
+    "info": "html/american-art.html",
     "state": {
       "reputation": 4.75e6,
       "cost": 2.4e10,
