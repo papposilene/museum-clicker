@@ -145,7 +145,8 @@
                 <li class="media" ng-repeat="w in hrc.workers" ng-show="hrc.isVisible(w)">
                   <div class="media-body">
                     <h4 class="media-heading">
-                      <i class="fas fa-user-graduate"></i> {{ w.name }}
+                      <img class="collection-icon media-object float-left" src="assets/icons/png/013-staff.png height="16px" width="16px" alt="">
+                      {{ w.name }}
                       <br /><span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span>
                     </h4>
                     <p ng-show="w.state.hired > 0">
