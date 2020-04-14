@@ -3,7 +3,7 @@
     "key": "collection-coc",
     "name": "Wunderkammer",
     "description": "Let the plunder of Nature begin!<br />ᕕ( ᐛ )ᕗ",
-    "cost_increase": 2.2,
+    "cost_increase": 2.3,
     "image": "assets/icons/png/024-dinosaur.png",
     "info": "html/wunderkammer.html",
     "state": {
@@ -16,7 +16,7 @@
     "key": "collection-greekart",
     "name": "Department of Greek art",
     "description": "Department of Greek Art",
-    "cost_increase": 2.1,
+    "cost_increase": 2.2,
     "image": "assets/icons/png/036-venus.png",
     "info": "html/ancient-greece.html",
     "state": {
@@ -29,7 +29,7 @@
     "key": "collection-romanart",
     "name": "Department of Roman Art",
     "description": "The Art of ancient Rome",
-    "cost_increase": 2,
+    "cost_increase": 2.1,
     "image": "assets/icons/png/029-laurel.png",
     "info": "html/roman-art.html",
     "state": {
@@ -42,7 +42,7 @@
     "key": "collection-egyptianart",
     "name": "Department of Egyptian Art",
     "description": "The art of ancient Egypt, and beyond...",
-    "cost_increase": 1.9,
+    "cost_increase": 2,
     "image": "assets/icons/png/020-sarcophagus.png",
     "info": "html/egyptian-art.html",
     "state": {
@@ -55,7 +55,7 @@
     "key": "collection-medievalart",
     "name": "Department of Medieval Art",
     "description": "From Byzantine art to Gothic art.",
-    "cost_increase": 1.8,
+    "cost_increase": 1.9,
     "image": "assets/icons/png/007-sword.png",
     "info": "html/medieval-art.html",
     "state": {
@@ -68,7 +68,7 @@
     "key": "collection-islamicart",
     "name": "Department of Islamic art",
     "description": "",
-    "cost_increase": 1.7,
+    "cost_increase": 1.8,
     "image": "assets/icons/png/038-vase-1.png",
     "info": "html/islamic-art.html",
     "state": {
@@ -81,7 +81,7 @@
     "key": "collection-renaissance",
     "name": "Department of Renaissance art",
     "description": "From italian Renaissance to Mannerism",
-    "cost_increase": 1.6,
+    "cost_increase": 1.7,
     "image": "assets/icons/png/050-gioconda.png",
     "info": "html/renaissance-art.html",
     "state": {
@@ -94,7 +94,7 @@
     "key": "collection-moderntimes",
     "name": "Department of Modern Times arts",
     "description": "Baroque, Rococo and Neoclassicism",
-    "cost_increase": 1.5,
+    "cost_increase": 1.6,
     "image": "assets/icons/png/002-statue.png",
     "info": "html/modern-art.html",
     "state": {
@@ -107,12 +107,25 @@
     "key": "collection-asianart",
     "name": "Department of Asian arts",
     "description": "All the Oriental arts within sight: India, China, Japan, Southeast Asia and so more...",
-    "cost_increase": 1.4,
+    "cost_increase": 1.5,
     "image": "assets/icons/png/calligraphy.png",
     "info": "html/asian-art.html",
     "state": {
       "reputation": 9e5,
       "cost": 5e9,
+      "info_levels": [ 1, 5, 10, 15, 20 ]
+    }
+  },
+  {
+    "key": "collection-oceania",
+    "name": "Department of Pacific arts",
+    "description": "Beyond the Far East, Oceania and PAcific islands.",
+    "cost_increase": 1.4,
+    "image": "assets/icons/png/014-skull.png",
+    "info": "html/oceania-art.html",
+    "state": {
+      "reputation": 4.75e6,
+      "cost": 2.4e10,
       "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
@@ -124,8 +137,8 @@
     "image": "assets/icons/png/016-museum-1.png",
     "info": "html/xixsiecle-art.html",
     "state": {
-      "reputation": 4.75e6,
-      "cost": 2.4e10,
+      "reputation": 2.5e7,
+      "cost": 9e10,
       "info_levels": [ 1 ]
     }
   },
@@ -137,7 +150,7 @@
     "image": "assets/icons/png/011-ax.png",
     "info": "html/prehistoric-art.html",
     "state": {
-      "reputation": 2.5e7,
+      "reputation": 4.53e7,
       "cost": 9e10,
       "info_levels": [ 1 ]
     }
@@ -150,8 +163,8 @@
     "image": "assets/icons/png/001-vase-2.png",
     "info": "html/mesopotamian-art.html",
     "state": {
-      "reputation": 4.53e7,
-      "cost": 9e10,
+      "reputation": 6.56e8,
+      "cost": 1.56e11,
       "info_levels": [ 1 ]
     }
   },
@@ -163,8 +176,8 @@
     "image": "assets/icons/png/031-mirror.png",
     "info": "html/modern-art.html",
     "state": {
-      "reputation": 6.56e8,
-      "cost": 1.56e11,
+      "reputation": 8.59e8,
+      "cost": 2.22e11,
       "info_levels": [ 1 ]
     }
   },
@@ -176,8 +189,8 @@
     "image": "assets/icons/png/030-fire-extinguisher.png",
     "info": "html/post-art.html",
     "state": {
-      "reputation": 8.59e8,
-      "cost": 2.22e11,
+      "reputation": 1.61e9,
+      "cost": 2.88e11,
       "info_levels": [ 1 ]
     }
   },
@@ -189,8 +202,8 @@
     "image": "assets/icons/png/029-laurel.png",
     "info": "html/post-art.html",
     "state": {
-      "reputation": 1.61e9,
-      "cost": 2.88e11,
+      "reputation": 1e10,
+      "cost": 1e12,
       "info_levels": [ 1 ]
     }
   },
@@ -202,8 +215,8 @@
     "image": "assets/icons/png/015-light.png",
     "info": "html/studies.html",
     "state": {
-      "reputation": 1e10,
-      "cost": 1e12,
+      "reputation": 1e11,
+      "cost": 1e13,
       "info_levels": [ 1 ]
     }
   }
