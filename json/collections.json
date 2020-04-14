@@ -107,7 +107,7 @@
     "key": "collection-asianart",
     "name": "Department of Asian arts",
     "description": "All the Oriental arts within sight: India, China, Japan, Southeast Asia and so more...",
-    "cost_increase": 1.5,
+    "cost_increase": 1.55,
     "image": "assets/icons/png/calligraphy.png",
     "info": "html/asian-art.html",
     "state": {
@@ -120,9 +120,22 @@
     "key": "collection-africa",
     "name": "Department of African arts",
     "description": "The Art of Africa: mask art and magic of arts.",
-    "cost_increase": 1.45,
+    "cost_increase": 1.5,
     "image": "assets/icons/png/009-gate.png",
     "info": "html/african-art.html",
+    "state": {
+      "reputation": 4.75e6,
+      "cost": 2.4e10,
+      "info_levels": [ 1, 5, 10, 15, 20 ]
+    }
+  },
+  {
+    "key": "collection-americas",
+    "name": "Department of Americas' arts",
+    "description": "The Art of Africa: mask art and magic of arts.",
+    "cost_increase": 1.45,
+    "image": "assets/icons/png/009-gate.png",
+    "info": "html/america-art.html",
     "state": {
       "reputation": 4.75e6,
       "cost": 2.4e10,
