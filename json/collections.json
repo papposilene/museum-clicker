@@ -117,12 +117,25 @@
     }
   },
   {
+    "key": "collection-africa",
+    "name": "Department of African arts",
+    "description": "The Art of Africa: mask art and magic of arts.",
+    "cost_increase": 1.45,
+    "image": "assets/icons/png/009-gate.png",
+    "info": "html/african-art.html",
+    "state": {
+      "reputation": 4.75e6,
+      "cost": 2.4e10,
+      "info_levels": [ 1, 5, 10, 15, 20 ]
+    }
+  },
+  {
     "key": "collection-oceania",
     "name": "Department of Pacific arts",
-    "description": "Beyond the Far East, Oceania and PAcific islands.",
+    "description": "Beyond the Far East, Oceania and Pacific islands.",
     "cost_increase": 1.4,
     "image": "assets/icons/png/014-skull.png",
-    "info": "html/oceania-art.html",
+    "info": "html/oceanian-art.html",
     "state": {
       "reputation": 4.75e6,
       "cost": 2.4e10,
