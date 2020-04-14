@@ -69,7 +69,7 @@
     "name": "Department of Islamic art",
     "description": "",
     "cost_increase": 1.7,
-    "image": "assets/icons/png/001-vase-1.png",
+    "image": "assets/icons/png/038-vase-1.png",
     "info": "html/islamic-art.html",
     "state": {
       "reputation": 5.4e3,
