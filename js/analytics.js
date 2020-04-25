@@ -70,6 +70,6 @@ var analytics =
             return;
         }
         
-        _paq.push(['trackEvent', 'event', category, action, label, value, {'screenName': analytics.screens.main }]);
+        _paq.push(['trackEvent', category, action, label, value, {'screenName': analytics.screens.main }]);
     }
 };
