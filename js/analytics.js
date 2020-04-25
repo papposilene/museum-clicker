@@ -7,7 +7,7 @@ var analytics =
         main: 'Main screen',
         about: 'About',
         achievements: 'Achievements',
-        info: 'Physics information'
+        info: 'Museum information'
     },
 
     events:
@@ -16,7 +16,7 @@ var analytics =
         categoryHR: 'HR',
         categoryUpgrades: 'Upgrades',
         
-        actionCollection: 'Collection',
+        actionCollection: 'Collect',
         actionHire: 'Hire',
         actionBuy: 'Buy'
     },
@@ -28,9 +28,9 @@ var analytics =
             return;
         }
         
-        ga('create', Helpers.analytics);
-        ga('set', { 'appName': 'Museum Clicker', 'appId': 'nl.psln.museum-clicker', 'appVersion': '0.9' });
-        ga('set', 'anonymizeIp', true);
+        _paq.push('create', Helpers.analytics);
+        _paq.push('set', { 'appName': 'Museum Clicker', 'appId': 'nl.psln.museum-clicker', 'appVersion': '0.9' });
+        _paq.push('set', 'anonymizeIp', true);
 
 
         $('#myModal').on('show.bs.modal', function (e) {
@@ -61,7 +61,7 @@ var analytics =
             return;
         }
         
-        ga('send', 'screenview', { 'screenName': type });
+        _paq.push('send', 'screenview', { 'screenName': type });
     },
     
     sendEvent: function(category, action, label, value)
@@ -70,6 +70,6 @@ var analytics =
             return;
         }
         
-        //ga('send', 'event', category, action, label, value, {'screenName': analytics.screens.main });
+        _paq.push('send', 'event', category, action, label, value, {'screenName': analytics.screens.main });
     }
 };
