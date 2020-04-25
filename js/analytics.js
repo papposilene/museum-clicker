@@ -29,8 +29,8 @@ var analytics =
         }
         
         _paq.push('create', Helpers.analytics);
-        _paq.push('set', { 'appName': 'Museum Clicker', 'appId': 'nl.psln.museum-clicker', 'appVersion': '0.9' });
-        _paq.push('set', 'anonymizeIp', true);
+        // _paq.push('set', { 'appName': 'Museum Clicker', 'appId': 'nl.psln.museum-clicker', 'appVersion': '0.9' });
+        // _paq.push('set', 'anonymizeIp', true);
 
 
         $('#myModal').on('show.bs.modal', function (e) {
@@ -61,7 +61,7 @@ var analytics =
             return;
         }
         
-        _paq.push('send', 'screenview', { 'screenName': type });
+        _paq.push('trackEvent', 'screenview', { 'screenName': type });
     },
     
     sendEvent: function(category, action, label, value)
