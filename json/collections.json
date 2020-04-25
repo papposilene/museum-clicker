@@ -146,22 +146,9 @@
     "key": "collection-oceania",
     "name": "Department of Pacific arts",
     "description": "Beyond the Far East, Oceania and Pacific islands.",
-    "cost_increase": 1.4,
+    "cost_increase": 1.35,
     "image": "assets/icons/png/014-skull.png",
     "info": "html/oceanian-art.html",
-    "state": {
-      "reputation": 4.75e6,
-      "cost": 2.4e10,
-      "info_levels": [ 1, 5, 10, 15, 20 ]
-    }
-  },
-  {
-    "key": "collection-xixsiecleart",
-    "name": "Department of XIXe siecle arts",
-    "description": "Before that art, it was the good old days.",
-    "cost_increase": 1.35,
-    "image": "assets/icons/png/016-museum-1.png",
-    "info": "html/xixsiecle-art.html",
     "state": {
       "reputation": 2.5e7,
       "cost": 9e10,
