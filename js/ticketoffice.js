@@ -32,7 +32,6 @@ var ticket =
         lightRingLine: '#A0B3FF',
         darkRing: '#7280B8',
         darkRingLine: '#7280B8',
-
         mucalLight: '#FFDFB7',
         mucalLightLine: '#FFDFB7',
         mucalDark: '#EA301F',
