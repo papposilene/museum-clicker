@@ -94,13 +94,13 @@
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading">
-                      {{ c.state.level > 0 ? c.name : '?????' }}
+                      {{ c.state.level > 0 ? c.name : '?????' }}<br />
+                      <span class="badge" ng-show="c.state.level > 0">{{ c.state.level }}</span>
                     </h4>
                   </div>
                   <div>
-                    <p class="text-center text-small" ng-show="c.state.level > 0">Level {{ c.state.level }}</p>
-                    <p class="text-justify" ng-show="c.state.level > 0">{{ c.description }}</p>
-                    <p class="text-justify" ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
+                    <p ng-show="c.state.level > 0" class="text-justify">{{ c.description }}</p>
+                    <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
                       <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-university"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
                       <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="{{ c.state.interesting ? 'fas fa-exclamation' : 'fas fa-info' }}"></i></button>
@@ -166,9 +166,10 @@
                       {{ w.name }}
                       <span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span>
                     </h4>
-                    <p ng-show="w.state.hired > 0">
-                      {{ w.description }}</p>
-                    <p ng-show="w.state.hired > 0" class="small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
+                  </div>
+                  <div>
+                    <p ng-show="w.state.hired > 0" class="text-justify">{{ w.description }}</p>
+                    <p ng-show="w.state.hired > 0" class="text-justify small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
                     <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fas fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
                 </li>
