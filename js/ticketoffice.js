@@ -149,7 +149,7 @@ var ticket =
         img.onload = function() {
             ctx.drawImage(img, 0, 0);
         }
-        img.src = "assets/icons/svg/006-ticket.svg";
+        img.src = "assets/icons/svg/048-museum.svg";
 
     },
 
