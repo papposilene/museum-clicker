@@ -657,44 +657,41 @@
     "constant": 1.5e8
   },
   {
-    "key": "upgrade-sps",
-    "name": "Super Proton Synchrotron",
-    "description": "A larger particle smasher.",
-    "effect": "Ten times the amount of artworks per click.",
-    "icon": "fa-circle-o-notch",
-    "cost": 5e5,
+    "key": "upgrade-mj",
+    "name": "Museums Journal",
+    "description": "Museums Journal is an online resource and monthly print magazine published by the Museums Association.",
+    "effect": "Two times the amount of artworks per click.",
+    "icon": "fa-newspaper",
+    "cost": 7500,
     "targets": [{ "key": "museum", "property": "ticket" }],
+    "requirements": [{ "key": "collection-coc", "property": "level", "threshold": 15 }],
+    "factor": 2
+  },
+  {
+    "key": "upgrade-jhc",
+    "name": "Journal of the History of Collections",
+    "description": "The Journal of the History of Collections is dedicated to providing the clearest insight into all aspects of collecting activity.",
+    "effect": "Ten times the amount of reputation per click.",
+    "icon": "fa-newspaper",
+    "cost": 5e5,
+    "targets": [{ "key": "collection-coc", "property": "reputation" }],
     "requirements": [
       { "key": "upgrade-acquisition3", "property": "used", "threshold": 1 },
-      { "key": "upgrade-artworking3", "property": "used", "threshold": 1 }
+      { "key": "collection-mesopotamianart", "property": "level", "threshold": 10 }
     ],
     "factor": 10
   },
   {
-    "key": "upgrade-tevatron",
-    "name": "Tevatron",
-    "description": "A larger particle smasher.",
-    "effect": "Ten times the amount of artworks per click.",
-    "icon": "fa-circle-o-notch",
+    "key": "upgrade-iss",
+    "name": "ICOFOM Study Series",
+    "description": "A journal dedicated to Museology.",
+    "effect": "Ten times the amount of reputation per click.",
+    "icon": "fa-newspaper",
     "cost": 5e7,
-    "targets": [{ "key": "museum", "property": "ticket" }],
+    "targets": [{ "key": "collection-coc", "property": "reputation" }],
     "requirements": [
       { "key": "upgrade-acquisition6", "property": "used", "threshold": 1 },
-      { "key": "upgrade-artworking6", "property": "used", "threshold": 1 }
-    ],
-    "factor": 10
-  },
-  {
-    "key": "upgrade-lhc",
-    "name": "Large Hadron Collider",
-    "description": "A larger particle smasher.",
-    "effect": "Ten times the amount of artworks per click.",
-    "icon": "fa-circle-o-notch",
-    "cost": 5e10,
-    "targets": [{ "key": "museum", "property": "ticket" }],
-    "requirements": [
-      { "key": "upgrade-acquisition9", "property": "used", "threshold": 1 },
-      { "key": "upgrade-artworking9", "property": "used", "threshold": 1 }
+      { "key": "collection-contemporaryart", "property": "level", "threshold": 5 }
     ],
     "factor": 10
   },
@@ -703,11 +700,14 @@
     "name": "Hyper Articles en Ligne",
     "description": "Hyper Articles en Ligne (HAL) is an open archive where authors can deposit scholarly documents from all academic fields.",
     "effect": "Future research gives double the amount of reputation.",
-    "icon": "fa-newspaper-o",
-    "cost": 7500,
-    "targets": [{ "key": "collection-coc", "property": "reputation" }],
-    "requirements": [{ "key": "collection-coc", "property": "level", "threshold": 5 }],
-    "factor": 2
+    "icon": "fa-newspaper",
+    "cost": 5e10,
+    "targets": [{ "key": "collection-studies", "property": "reputation" }],
+    "requirements": [
+      { "key": "upgrade-acquisition9", "property": "used", "threshold": 1 },
+      { "key": "collection-studies", "property": "level", "threshold": 1 }
+    ],
+    "factor": 10
   },
   {
     "key": "upgrade-universalmuseum",
