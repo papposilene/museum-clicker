@@ -733,7 +733,6 @@
       { "key": "collection-mesopotamianart", "property": "reputation" },
       { "key": "collection-modernart", "property": "reputation" },
       { "key": "collection-contemporaryart", "property": "reputation" },
-      { "key": "collection-postmodernart", "property": "reputation" },
       { "key": "collection-studies", "property": "reputation" }
     ],
     "requirements": [
@@ -753,7 +752,6 @@
       { "key": "collection-mesopotamianart", "property": "level", "threshold": 1 },
       { "key": "collection-modernart", "property": "level", "threshold": 1 },
       { "key": "collection-contemporaryart", "property": "level", "threshold": 1 },
-      { "key": "collection-postmodernart", "property": "level", "threshold": 1 },
       { "key": "collection-studies", "property": "level", "threshold": 1 }
     ],
     "factor": 2
