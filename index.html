@@ -96,12 +96,14 @@
                     <h4 class="media-heading">
                       {{ c.state.level > 0 ? c.name : '?????' }}<br /><span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span>
                     </h4>
+                  </div>
+                  <div>
                     <p ng-show="c.state.level > 0">{{ c.description }}</p>
                     <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
                       <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-university"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
-                    <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="{{ c.state.interesting ? 'fas fa-exclamation' : 'fas fa-info' }}"></i></button>
-                  </div>
+                      <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="{{ c.state.interesting ? 'fas fa-exclamation' : 'fas fa-info' }}"></i></button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -311,7 +313,7 @@
               <li><a href="http://fortawesome.github.io/">Fontawesome</a></li>
               <li><a href="https://www.flaticon.com/packs/museum-10" title="Freepik">Freepik</a></li>
             </ul>
-            <h5>Authors</h5>
+            <h5>Original <em>Particle Clicker</em> authors</h5>
             <ul>
               <li><a href="https://github.com/gbiro">Gabor Biro</a></li>
               <li><a href="https://github.com/ibab">Igor Babuschkin</a></li>
@@ -320,8 +322,15 @@
               <li><a href="https://github.com/zhangjiannan">Jiannan Zhang</a></li>
             </ul>
             <p>Feel free to get in touch with us via GitHub or by shooting us an email on<br><a href="mailto:particle-clicker@googlegroups.com">particle-clicker@googlegroups.com</a>.</p>
-            <h5>Source</h5>
+            <h5>Original <em>Particle Clicker</em> source</h5>
             <p>The source code of this game is freely available on <a href="https://github.com/particle-clicker/particle-clicker"><i class="fab fa-github"></i> GitHub</a> under the terms of an MIT license.</p>
+            <h5><em>Museum Clicker</em> author</h5>
+            <ul>
+              <li><a href="https://github.com/papposilene">Philippe-Alexandre Pierre</a></li>
+            </ul>
+            <p>Feel free to get in touch with me via GitHub.</p>
+            <h5><em>Museum Clicker</em> source</h5>
+            <p>The source code of this game is freely available on <a href="https://github.com/papposilene/museum-clicker"><i class="fab fa-github"></i> GitHub</a> under the terms of an MIT license.</p>
           </div>
         </div>
       </div>
