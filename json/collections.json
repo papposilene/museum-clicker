@@ -208,19 +208,6 @@
     }
   },
   {
-    "key": "collection-postmodernart",
-    "name": "Department of Postmodern art",
-    "description": "Post-Donald Kuspit, and beyond the end of Art...",
-    "cost_increase": 1.1,
-    "image": "assets/icons/png/029-laurel.png",
-    "info": "html/post-art.html",
-    "state": {
-      "reputation": 1e10,
-      "cost": 1e12,
-      "info_levels": [ 1 ]
-    }
-  },
-  {
     "key": "collection-studies",
     "name": "Department of New Issues",
     "description": "Repatriation, feminism and gender studies",
@@ -228,8 +215,8 @@
     "image": "assets/icons/png/015-light.png",
     "info": "html/studies.html",
     "state": {
-      "reputation": 1e11,
-      "cost": 1e13,
+      "reputation": 5e10,
+      "cost": 5e11,
       "info_levels": [ 1 ]
     }
   }
