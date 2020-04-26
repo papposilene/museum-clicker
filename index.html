@@ -94,12 +94,13 @@
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading">
-                      {{ c.state.level > 0 ? c.name : '?????' }}<br /><span ng-show="c.state.level > 0" class="badge">Level {{ c.state.level }}</span>
+                      {{ c.state.level > 0 ? c.name : '?????' }}
                     </h4>
                   </div>
                   <div>
-                    <p ng-show="c.state.level > 0">{{ c.description }}</p>
-                    <p ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
+                    <p class="text-center text-small" ng-show="c.state.level > 0">Level {{ c.state.level }}</p>
+                    <p class="text-justify" ng-show="c.state.level > 0">{{ c.description }}</p>
+                    <p class="text-justify" ng-show="c.state.level > 0" class="small">Collection yields <strong>{{ c.state.reputation | niceNumber }}</strong> reputation.</p>
                     <div class="btn-group">
                       <button class="btn btn-primary" ng-disabled="!cc.isAvailable(c)" ng-click="cc.doCollection(c)"><i class="fas fa-university"></i> <small>{{ c.state.cost | niceNumber }} artworks</small></button>
                       <button class="btn btn-info {{ c.state.interesting ? 'blink' : '' }}" ng-show="c.state.level > 0" ng-click="cc.showInfo(c)"><i class="{{ c.state.interesting ? 'fas fa-exclamation' : 'fas fa-info' }}"></i></button>
@@ -343,7 +344,6 @@
     <script src="js/external/jquery.cookie-1.4.1.min.js"></script>
     <script src="js/external/retina.js"></script>
     <script src="js/external/fastclick.js"></script>
-
     <script src="js/storage.js"></script>
     <script src="js/helpers.js"></script>
     <script src="js/analytics.js"></script>
