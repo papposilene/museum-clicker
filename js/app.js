@@ -53,7 +53,7 @@
     this.museum = museum;
     this.showTicketInfo = function() {
       if (!this._ticketInfo) {
-        this._ticketInfo = Helpers.loadFile('html/ticket.html');
+        this._ticketInfo = Helpers.loadFile('html/museum-and-collection.html');
       }
       UI.showModal('Ticket', this._ticketInfo);
     };
