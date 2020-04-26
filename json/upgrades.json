@@ -699,10 +699,10 @@
     "factor": 10
   },
   {
-    "key": "upgrade-cpv1",
-    "name": "B factories",
-    "description": "",
-    "effect": "Future CP violation research gives double the amount of reputation.",
+    "key": "upgrade-hal",
+    "name": "Hyper Articles en Ligne",
+    "description": "Hyper Articles en Ligne (HAL) is an open archive where authors can deposit scholarly documents from all academic fields.",
+    "effect": "Future research gives double the amount of reputation.",
     "icon": "fa-newspaper-o",
     "cost": 7500,
     "targets": [{ "key": "collection-coc", "property": "reputation" }],
