@@ -7,7 +7,7 @@ var analytics =
         main: 'Main screen',
         about: 'About',
         achievements: 'Achievements',
-        info: 'Museum information'
+        info: 'Information'
     },
 
     events:
@@ -18,7 +18,7 @@ var analytics =
         
         actionCollection: 'Collect',
         actionHire: 'Hire',
-        actionBuy: 'Buy'
+        actionBuy: 'Upgrade'
     },
     
     init: function()
@@ -34,24 +34,24 @@ var analytics =
 
 
         $('#myModal').on('show.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.about);
+            analytics.sendEvent('screen', 'view', analytics.screens.about);
         });
         $('#myModal').on('hide.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.main);
+            analytics.sendEvent('screen', 'view', analytics.screens.main);
         });
 
         $('#achievements-modal').on('show.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.achievements);
+            analytics.sendEvent('screen', 'view', analytics.screens.achievements);
         });
         $('#achievements-modal').on('hide.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.main);
+            analytics.sendEvent('screen', 'view', analytics.screens.main);
         });
 
         $('#infoBox').on('show.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.info);
+            analytics.sendEvent('screen', 'view', analytics.screens.info);
         });
         $('#infoBox').on('hide.bs.modal', function (e) {
-            analytics.sendScreen(analytics.screens.main);
+            analytics.sendEvent('screen', 'view', analytics.screens.main);
         });
     },
     
@@ -61,15 +61,15 @@ var analytics =
             return;
         }
         
-        _paq.push('trackEvent', 'screenview', { 'screenName': type });
+        _paq.push(['trackEvent', 'screen', 'view', type]);
     },
     
-    sendEvent: function(category, action, label, value)
+    sendEvent: function(category, action, name)
     {
-        if (!analytics.enabled || typeof category === 'undefined' || typeof action === 'undefined' || typeof label === 'undefined' || typeof value === 'undefined') {
+        if (!analytics.enabled || typeof category === 'undefined' || typeof action === 'undefined' || typeof label === 'undefined') {
             return;
         }
         
-        _paq.push(['trackEvent', category, action, label, value, {'screenName': analytics.screens.main }]);
+        _paq.push(['trackEvent', category, action, name ]);
     }
 };
