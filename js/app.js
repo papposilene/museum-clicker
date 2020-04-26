@@ -55,7 +55,7 @@
       if (!this._ticketInfo) {
         this._ticketInfo = Helpers.loadFile('html/museum-and-collection.html');
       }
-      UI.showModal('Ticket', this._ticketInfo);
+      UI.showModal('Museums and collections history', this._ticketInfo);
     };
     $interval(function() {  // one tick
       var cashflow = museum.getMoney();
