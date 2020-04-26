@@ -570,7 +570,7 @@
   },
   {
     "key": "upgrade-artworking5",
-    "name": "Catalogue raisonn&eacute;",
+    "name": "Catalogue raisonne",
     "description": "Increased instantaneous the number of artworks in the museum, but with a big listing of everything of every artists.",
     "effect": "+1875 artworks per click.",
     "icon": "fa-book",
