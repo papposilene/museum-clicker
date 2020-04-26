@@ -25,7 +25,7 @@
 
   app.filter('currency', ['$filter', function($filter) {
     return function(input) {
-      return 'M₥ ' + $filter('niceNumber')(input);
+      return 'MuM ' + $filter('niceNumber')(input);
     };
   }]);
 
