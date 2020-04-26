@@ -54,7 +54,7 @@
     {
     "key": "collection-medievalart",
     "name": "Department of Medieval Art",
-    "description": "From Byzantine art to Gothic art.",
+    "description": "From Byzantine art to Gothic art: green skin, dark mood.",
     "cost_increase": 1.9,
     "image": "assets/icons/png/007-sword.png",
     "info": "html/medieval-art.html",
@@ -67,7 +67,7 @@
   {
     "key": "collection-islamicart",
     "name": "Department of Islamic art",
-    "description": "",
+    "description": "Not too ancient art from the Middle East.",
     "cost_increase": 1.8,
     "image": "assets/icons/png/038-vase-1.png",
     "info": "html/islamic-art.html",
@@ -80,7 +80,7 @@
   {
     "key": "collection-renaissance",
     "name": "Department of Renaissance art",
-    "description": "From italian Renaissance to Mannerism",
+    "description": "From italian Renaissance to Mannerism, from the ugly Ancients to the ugly Moderns.",
     "cost_increase": 1.7,
     "image": "assets/icons/png/050-gioconda.png",
     "info": "html/renaissance-art.html",
@@ -93,7 +93,7 @@
   {
     "key": "collection-moderntimes",
     "name": "Department of Modern Times arts",
-    "description": "Baroque, Rococo and Neoclassicism",
+    "description": "Baroque, Rococo and Neoclassicism: the end of the art before the next end of the art.",
     "cost_increase": 1.6,
     "image": "assets/icons/png/002-statue.png",
     "info": "html/modern-art.html",
@@ -171,7 +171,7 @@
   {
     "key": "collection-mesopotamianart",
     "name": "Department of Mesopotamia",
-    "description": "The birth of the Arts",
+    "description": "The birth of the Arts and civilisation.",
     "cost_increase": 1.25,
     "image": "assets/icons/png/001-vase-2.png",
     "info": "html/mesopotamian-art.html",
@@ -210,7 +210,7 @@
   {
     "key": "collection-studies",
     "name": "Department of New Issues",
-    "description": "Repatriation, feminism and gender studies",
+    "description": "Repatriation, feminism and gender studies.",
     "cost_increase": 1.05,
     "image": "assets/icons/png/015-light.png",
     "info": "html/studies.html",
