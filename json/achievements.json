@@ -865,7 +865,7 @@
   },
   {
     "title": "100 artworks in your museum!",
-    "description": "You bought the closet from the neighbor and found things that could be studied and exhibited.",
+    "description": "You opened your first department with a few hundred works of art. Congratulations!",
     "icon": "fa-palette",
     "key": "achievement-artworks-100",
     "targetProperty": "artworks",
@@ -873,8 +873,8 @@
     "threshold": 100
   },
   {
-    "title": "1k souvenirs!",
-    "description": "Napoleon has just returned from his extended weekend in Italy. He brought you some knick-knacks.",
+    "title": "1k artworks in your museum!",
+    "description": "Your museum is getting serious. What if you hire a curator from the Louvre?",
     "icon": "fa-paint-roller",
     "key": "achievement-artworks-1k",
     "targetProperty": "artworks",
@@ -882,8 +882,8 @@
     "threshold": 1000
   },
   {
-    "title": "10k artworks!",
-    "description": "The serious things begin: we have to buy nails and display cases.",
+    "title": "10k artworks in your museum!",
+    "description": "Your museum has more linear meters of walls than the Louvre, the MET and the Center Pompidou combined.",
     "icon": "fa-spray-can",
     "key": "achievement-artworks-10k",
     "targetProperty": "artworks",
@@ -891,8 +891,8 @@
     "threshold": 10000
   },
   {
-    "title": "100k artworks!",
-    "description": "",
+    "title": "100k artworks in your museum!",
+    "description": "The other museums in the world take the name of your museum and affix the name of their city to it.",
     "icon": "fa-magic",
     "key": "achievement-artworks-100k",
     "targetProperty": "artworks",
@@ -900,26 +900,17 @@
     "threshold": 100000
   },
   {
-    "title": "1M artworks!",
-    "description": "",
+    "title": "100 artworks acquired by your museum!",
+    "description": "You bought the closet from the neighbor and found things that could be studied and exhibited.",
     "icon": "fa-industry",
-    "key": "achievement-artworks-1M",
-    "targetProperty": "artworks",
-    "targetKey": "museum",
-    "threshold": 1000000
-  },
-  {
-    "title": "100 artworks acquired and conserved in your museum!",
-    "description": "",
-    "icon": "fa-database",
-    "key": "achievement-artwork-collected-100",
+    "key": "achievement-artworks-collected-100",
     "targetProperty": "artworkCollected",
     "targetKey": "museum",
     "threshold": 100
   },
   {
-    "title": "10k artworks acquired and conserved in your museum!",
-    "description": "",
+    "title": "10k artworks acquired by your museum!",
+    "description": "Napoleon has just returned from his extended weekend in Italy. He brought you some knick-knacks.",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10k",
     "targetProperty": "artworkCollected",
@@ -927,17 +918,17 @@
     "threshold": 10000
   },
   {
-    "title": "1M artworks acquired and conserved in your museum!",
-    "description": "",
+    "title": "100M artworks acquired by your museum!",
+    "description": "The serious things begin: we have to buy nails, hammers and display cases.",
     "icon": "fa-database",
-    "key": "achievement-artwork-collected-1M",
+    "key": "achievement-artwork-collected-100M",
     "targetProperty": "artworkCollected",
     "targetKey": "museum",
     "threshold": 1000000
   },
   {
-    "title": "100M artworks acquired and conserved in your museum!",
-    "description": "",
+    "title": "100M artworks acquired by your museum!",
+    "description": "Too many artworks, too much artworks!",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-100M",
     "targetProperty": "artworkCollected",
@@ -945,8 +936,8 @@
     "threshold": 100000000
   },
   {
-    "title": "10G artworks acquired and conserved in your museum!",
-    "description": "",
+    "title": "10G artworks acquired by your museum!",
+    "description": "You have started collecting artifacts beyond Earth.",
     "icon": "fa-database",
     "key": "achievement-artwork-collected-10G",
     "targetProperty": "artworkCollected",
@@ -983,7 +974,7 @@
   {
     "title": "Your museum tickets are the new Bitcoin.",
     "description": "Despite your museum is a non-profit institution, you have taxed 100M MuseuMoney from our visitors. ¯\\_(ツ)_/¯",
-    "icon": "fa-btc",
+    "icon": "fa-money-bill-wave-alt",
     "key": "achievement-museumoney-collected-100M",
     "targetProperty": "moneyCollected",
     "targetKey": "museum",
@@ -1009,7 +1000,7 @@
   },
   {
     "title": "10k loans around the world!",
-    "description": "",
+    "description": "Your temporary exhibitions are starting to travel around the world.",
     "icon": "fa-globe-americas",
     "key": "achievement-artwork-conserved-10k",
     "targetProperty": "artworkSpent",
@@ -1018,7 +1009,7 @@
   },
   {
     "title": "1M loans around the world!",
-    "description": "",
+    "description": "Your museum has become a factory for temporary international exhibitions.",
     "icon": "fa-globe-asia",
     "key": "achievement-artwork-conserved-1M",
     "targetProperty": "artworkSpent",
