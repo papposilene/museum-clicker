@@ -116,18 +116,6 @@
       <div id="column-museum" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="MuseumController as mc">
         <input class="hidden-xs" id="museumname" value="{{ mc.museum.state.name }}" ng-model="mc.museum.state.name" ng-cloak>
         <hr class="hidden-xs">
-        <div id="ticket-holder">
-          <div id="ticket" ng-controller="TicketController as tc">
-            <canvas id="ticket-core" width="400" height="400">
-              Your ticket office. Click on it to generate visitors.
-            </canvas>
-            <canvas ng-click="tc.click()" id="ticket-visitors" width="400" height="400" class="prevent-select">
-              Your ticket office. Click on it to generate visitors.
-            </canvas>
-          </div>
-        </div>
-        <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fas fa-info"></i></button>
-        <div class="row"></div>
         <div class="row status" ng-cloak>
           <div class="col-xs-4 text-center col-no-padding-xs">
             <strong>Artworks</strong><br>
@@ -144,7 +132,20 @@
             {{ mc.museum.state.money | currency }}
             <div class="update-value" id="update-cashflow"></div>
           </div>
+        </div>  
+        <div class="row"></div>
+        <hr class="hidden-xs">
+        <div id="ticket-holder">
+          <div id="ticket" ng-controller="TicketController as tc">
+            <canvas id="ticket-core" width="400" height="400">
+              Your ticket office. Click on it to generate acquisitions, visitors and donations.
+            </canvas>
+            <canvas ng-click="tc.click()" id="ticket-visitors" width="400" height="400" class="prevent-select">
+              Your ticket office. Click on it to generate acquisitions, visitors and donations.
+            </canvas>
+          </div>
         </div>
+        <button id="ticket-info" class="btn btn-info" ng-click="mc.showTicketInfo()"><i class="fas fa-info"></i></button>
       </div>
 
       <div class="col-md-3 col-md-3s col-lg-2 col-no-padding visible-md-block visible-lg-block">
