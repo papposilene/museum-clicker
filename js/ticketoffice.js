@@ -111,7 +111,7 @@ var ticket =
 
         var img = new Image();
         img.onload = function() {
-            ctx.drawImage(img, 400, 400);
+            ctx.drawImage(img, 0, 0);
         }
         img.src = "assets/icons/svg/048-museum.svg";
     },
