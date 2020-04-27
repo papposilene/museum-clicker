@@ -145,7 +145,7 @@ var ticket =
         var cx = ticket.width / 2;
         var cy = ticket.height / 2;
         
-        v = await Canvg.from(ctx, 'assets/icons/svg/048-museum.svg');
+        v = Canvg.from(ctx, 'assets/icons/svg/048-museum.svg');
         
         // Start SVG rendering with animations and mouse handling.
         v.start();
