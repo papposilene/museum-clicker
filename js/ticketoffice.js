@@ -144,12 +144,19 @@ var ticket =
         var ctx = ticket.core.ctx;
         var cx = ticket.width / 2;
         var cy = ticket.height / 2;
+        
+        v = await Canvg.from(ctx, 'assets/icons/svg/048-museum.svg');
+        
+        // Start SVG rendering with animations and mouse handling.
+        v.start();
+        
+        /*
         var img = new Image();
         img.onload = function() {
             ctx.drawImage(img, 0, 0);
         }
         img.src = "assets/icons/svg/048-museum.svg";
-
+        */
     },
 
     addEvent: function()
