@@ -108,17 +108,12 @@ var ticket =
         var ctx = ticket.core.ctx;
         var cx = ticket.width / 2;
         var cy = ticket.height / 2;
-        
-        v = canvg.Canvg.from(ctx, 'assets/icons/svg/048-museum.svg');
-        v.start();
-        
-        /*
+
         var img = new Image();
         img.onload = function() {
-            ctx.drawImage(img, 0, 0);
+            ctx.drawImage(img, 400, 400);
         }
         img.src = "assets/icons/svg/048-museum.svg";
-        */
     },
 
     addEvent: function()
