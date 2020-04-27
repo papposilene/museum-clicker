@@ -20,42 +20,6 @@ var ticket =
 
     ratio: 1,
 
-    colors: 
-    {
-        siliconRing: '#FFF371',
-        siliconRingLine: '#EAC918',
-        ecal: '#C5FF82',
-        ecalLine: '#9EFF28',
-        hcal: '#E1FF79',
-        hcalLine: '#C9FF2D',
-        lightRing: '#A0B3FF',
-        lightRingLine: '#A0B3FF',
-        darkRing: '#7280B8',
-        darkRingLine: '#7280B8',
-        mucalLight: '#FFDFB7',
-        mucalLightLine: '#FFDFB7',
-        mucalDark: '#EA301F',
-        mucalDarkLine: '#C5291A'
-    },
-
-    radius:
-    {
-        siliconInner: 10,
-        silicon: 30,
-        siliconSpace: 35,
-        ecal: 50,
-        hcal: 80,
-        darkRing1: 83,
-        darkRing1Space: 86,
-        lightRing: 92,
-        lightRingSpace: 94,
-        darkRing2: 100,
-
-        mucal: 107,
-        mucalLight: 8,
-        mucalDark: 18
-    },
-
     tracks:
     [
         {
@@ -146,8 +110,6 @@ var ticket =
         var cy = ticket.height / 2;
         
         v = canvg.Canvg.from(ctx, 'assets/icons/svg/048-museum.svg');
-        
-        // Start SVG rendering with animations and mouse handling.
         v.start();
         
         /*
