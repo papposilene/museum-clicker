@@ -148,7 +148,7 @@ var ticket =
         img.onload = function() {
             ctx.drawImage(img, 0, 0);
         }
-        img.src = "assets/icons/svg/048-museum.svg";
+        img.src = "assets/icons/png/048-museum.png";
     },
 
     addEvent: function()
