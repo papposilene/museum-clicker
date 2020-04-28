@@ -171,7 +171,7 @@
                   <div>
                     <p ng-show="w.state.hired > 0" class="text-justify">{{ w.description }}</p>
                     <p ng-show="w.state.hired > 0" class="text-justify small">Study <strong>{{ w.state.rate | niceNumber }}</strong> artworks per second.</p>
-                    <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fas fa-money-bill-alt"></i> <small>{{ w.state.cost | currency }}</small></button>
+                    <button class="btn btn-primary btn-block" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fas fa-money-bill-alt"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
@@ -196,7 +196,7 @@
                     <h4 class="media-heading"><i class="fas {{ u.icon }} media-object"></i> {{ u.name }}</h4>
                     <p>{{ u.description }}</p>
                     <p class="small">{{ u.effect }}</p>
-                    <button class="btn btn-primary" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="far fa-money-bill-alt"></i> <small>{{ u.cost | currency }}</small></button>
+                    <button class="btn btn-primary btn-block" ng-disabled="!uc.isAvailable(u)" ng-click="uc.upgrade(u)"><i class="far fa-money-bill-alt"></i> <small>{{ u.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
