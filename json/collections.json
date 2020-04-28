@@ -22,7 +22,7 @@
     "state": {
       "reputation": 6e0,
       "cost": 4e2,
-      "info_levels": [ 1, 5 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -35,7 +35,7 @@
     "state": {
       "reputation": 3.3e1,
       "cost": 1e4,
-      "info_levels": [ 1, 5 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -48,7 +48,7 @@
     "state": {
       "reputation": 1.85e2,
       "cost": 2e5,
-      "info_levels": [ 1, 5 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
     {
@@ -74,7 +74,7 @@
     "state": {
       "reputation": 5.4e3,
       "cost": 3.2e7,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -87,7 +87,7 @@
     "state": {
       "reputation": 3e4,
       "cost": 1.28e8,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -100,7 +100,7 @@
     "state": {
       "reputation": 1.6e5,
       "cost": 9e8,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -152,7 +152,7 @@
     "state": {
       "reputation": 2.5e7,
       "cost": 9e10,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -165,7 +165,7 @@
     "state": {
       "reputation": 4.53e7,
       "cost": 9e10,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -178,7 +178,7 @@
     "state": {
       "reputation": 6.56e8,
       "cost": 1.56e11,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -191,7 +191,7 @@
     "state": {
       "reputation": 8.59e8,
       "cost": 2.22e11,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -204,7 +204,7 @@
     "state": {
       "reputation": 1.61e9,
       "cost": 2.88e11,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   },
   {
@@ -217,7 +217,7 @@
     "state": {
       "reputation": 5e10,
       "cost": 5e11,
-      "info_levels": [ 1 ]
+      "info_levels": [ 1, 5, 10, 15, 20 ]
     }
   }
 ]
